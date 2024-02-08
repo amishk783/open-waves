@@ -10,7 +10,10 @@ import { Header } from "@/components/header/Header";
 import { Hero } from "@/components/Hero";
 import { RoadMap } from "@/components/RoadMap";
 import { Offering } from "@/components/Offering";
-import { Studio } from "@/components/Studio";
+import { Studio } from "@/components/studio/Studio";
+import { AboutArea } from "@/components/AboutArea";
+import { Projects } from "@/components/Project/Projects";
+import { ProjectSlider } from "@/components/Project/ProjectSlider";
 
 export type Todo = {
   id: number;
@@ -51,6 +54,9 @@ export default function Home() {
         <RoadMap />
         <Offering />
         <Studio />
+        <AboutArea />
+        <Projects />
+        
       </main>
     </Fragment>
   );

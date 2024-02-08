@@ -81,14 +81,31 @@
     padding: 0 15px;
   }
 }
-@layer base{
-  .bg-line{
+@layer base {
+  .bg-line {
     background-image: url("/public/linenew.png");
   }
 }
-@layer components{
-  .bg-line{
+@layer components {
+  .bg-line {
     background-image: url("/public/linenew.png");
   }
 }
-
+@layer components {
+  .hoverover {
+    background: rgb(41, 38, 38);
+  }
+  .active-studio {
+    background-color: black;
+    flex-grow: 1;
+    justify-content: center;
+    padding-left: 2.75rem /* 44px */;
+    padding-right: 2.75rem;
+    padding-top: 1rem /* 16px */;
+    padding-bottom: 1rem;
+    white-space: nowrap;
+    --tw-bg-opacity: 1;
+    
+    background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  }
+}
