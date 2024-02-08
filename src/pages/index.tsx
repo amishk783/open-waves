@@ -7,6 +7,10 @@ import { todo } from "node:test";
 import { NavigationMenuDemo } from "@/components/header/NavigationDemo";
 import { NavBar } from "@/components/header/NavBar";
 import { Header } from "@/components/header/Header";
+import { Hero } from "@/components/Hero";
+import { RoadMap } from "@/components/RoadMap";
+import { Offering } from "@/components/Offering";
+import { Studio } from "@/components/Studio";
 
 export type Todo = {
   id: number;
@@ -40,24 +44,13 @@ export default function Home() {
     <Fragment>
       <div className="flex justify-center">
         {/* <NavigationMenuDemo /> */}
-        <Header/>
+        <Header />
       </div>
-      <main className="m-40 flex flex-col">
-        <form onSubmit={onSubmitHandler} className=" justify-center">
-          <input
-            className="border-4 px-2 py-2 rounded-md m-3 border-lime-300"
-            type="text"
-            placeholder="do something"
-          />
-          <button
-            type="submit"
-            className="border-2 px-2 py-2 rounded-md border-amber-200 bg-amber-100"
-          >
-            Add
-          </button>
-        </form>
-        <Todos todos={todos} onClick={onClickHandler} />
-        {/* <Button onClick={onClickHandler} /> */}
+      <main className="">
+        <Hero />
+        <RoadMap />
+        <Offering />
+        <Studio />
       </main>
     </Fragment>
   );

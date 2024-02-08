@@ -81,3 +81,14 @@
     padding: 0 15px;
   }
 }
+@layer base{
+  .bg-line{
+    background-image: url("/public/linenew.png");
+  }
+}
+@layer components{
+  .bg-line{
+    background-image: url("/public/linenew.png");
+  }
+}
+

@@ -50,18 +50,18 @@ const components: {
   },
 ];
 
-export function LayoutNav() {
+export function Menu2() {
   return (
     <div className="absolute left-0 w-full h-100vh bg-blue-200 overflow-x-hidden ">
+      {" "}
+      {/* outline */}
       <div className="">
         <div className="max-container flex ">
           <div className="flex-1 pt-10 pr-[95px]">
             <div className=" py-7 w-full items-center justify-between flex-col space-y-4">
               <div className="w-full grid grid-cols-2 gap-5 space-y-2 border-b-2  items-start pb-16 justify-between">
-
-                {}
-                {/* {service=== potifoli } */}
-
+                {" "}
+                {/* grid */}
                 {components.map((component) => (
                   <div
                     key={component.title}
@@ -85,6 +85,8 @@ export function LayoutNav() {
                 ))}
               </div>
               <ul className="flex gap-6">
+                {" "}
+                {/* icons  */}
                 {icons.map((icon) => (
                   <Image
                     key={icon.slink}
@@ -98,6 +100,8 @@ export function LayoutNav() {
             </div>
           </div>
           <div className=" bg-white relative py-12 pl-1">
+            {" "}
+            {/* right part  */}
             <div className="flex flex-col items-start">
               <Image
                 src="/macbook.jpg"
