@@ -18,6 +18,7 @@ import { NewsArea } from "@/components/newarea/NewArea";
 import { ContactArea } from "@/components/ContactArea";
 import { Footer } from "@/components/footer/Footer";
 
+
 export default function Home() {
   return (
     <Fragment>
@@ -36,4 +37,4 @@ export default function Home() {
       </main>
     </Fragment>
   );
-}
+ }
