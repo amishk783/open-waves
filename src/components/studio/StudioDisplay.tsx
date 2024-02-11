@@ -74,7 +74,7 @@ export function StudioDisplay({ serviceId }: { serviceId: number }) {
   console.log(matchedService);
 
   return (
-    <div className="mt-10 max-md:max-w-full">
+    <div className="mt-10 max-md:max-w-full max-sm:mt-2">
       <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
         <div className="flex flex-col w-3/5 max-md:ml-0 max-md:w-full">
           <div className="grow px-9 py-7 w-full bg-white rounded-xl max-md:px-5 max-md:mt-6 max-md:max-w-full">

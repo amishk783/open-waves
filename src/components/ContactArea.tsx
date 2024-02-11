@@ -52,8 +52,8 @@ export function ContactArea() {
     }
   };
   return (
-    <section>
-      <div className="flex max-container space-x-10 mb-40">
+    <section className="">
+      <div className="flex max-container space-x-10 max-sm:space-x-0 mb-40 max-sm:flex-col" >
         <form
           onSubmit={handleSubmit}
           className="flex flex-col grow px-20 py-12 w-full bg-blue-50 rounded-xl max-md:px-5 max-md:mt-6 max-md:max-w-full"
@@ -173,7 +173,7 @@ export function ContactArea() {
           </button>
         </form>
         <div
-          className="flex grow justify-center items-center px-16 py-12 w-full bg-blue-50 rounded-xl max-md:px-5 max-md:mt-6"
+          className="flex justify-center items-center px-16 py-12 w-full bg-blue-50 rounded-xl max-md:px-[5px] max-sm:px-1 max-sm:py-2 max-md:mt-6"
           aria-label="Statistics"
         >
           <div className="flex flex-col mt-28 max-w-full w-[191px] max-md:mt-10">
@@ -186,7 +186,7 @@ export function ContactArea() {
                 Field Experience
               </div>
             </div>
-            <div className="flex flex-col pt-1.5 pr-6 pb-12 mt-12 border-b border-solid border-b-zinc-900 border-b-opacity-20 max-md:pr-5 max-md:mt-10">
+            <div className="flex flex-col pt-1.5 pr-6 pb-12 mt-12 border-b border-solid border-b-zinc-900 border-b-opacity-20 max-md:pr-2 max-md:mt-10">
               <div className="flex gap-2 justify-between leading-[100%] text-neutral-800">
                 <div className="flex-grow text-4xl font-medium">950+ </div>
                 <div className="flex-grow self-start mt-3 text-xl">

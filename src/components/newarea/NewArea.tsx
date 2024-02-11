@@ -4,26 +4,26 @@ export function NewsArea() {
   return (
     <section className=" pt-44 pb-44">
       <div className="max-container">
-        <div className="flex  justify-around  items-end  mb-[70px]">
-          <div className="">
-            <h5 className="mb-5 text-sm tracking-wider text-blue-500 uppercase">
+        <div className="flex  justify-around  items-end  mb-[70px] max-sm:flex-col">
+          <div className="max-sm:mb-5">
+            <h5 className="mb-5 text-sm tracking-widest text-blue-500 uppercase">
               Interesting Articles
             </h5>
-            <h1 className="  tracking-[-1px] leading-[56px] font-bold text-6xl">
+            <h1 className="  tracking-[-1px] leading-[56px] font-bold text-5xl max-sm:leading-[44px]">
               Read daily news about <br /> startup companies
             </h1>
           </div>
           <div className="flex">
-            <p className=" pb-2 text-xl text-center  leading-7 max-w-[655px] ">
-              In todays rapidly evolving world, technology is constantly
-              shaping the way we live and interact. From artificial intelligence
-              and automation to virtual reality, the pace of technological
+            <p className=" pb-2 text-xl text-center  leading-7 max-w-[655px] max-sm:text-left ">
+              In todays rapidly evolving world, technology is constantly shaping
+              the way we live and interact. From artificial intelligence and
+              automation to virtual reality, the pace of technological
               advancements is staggering.
             </p>
           </div>
         </div>
-        <div className="flex gap-14 rounded-lg w-full  p-6  relative bg-black">
-          <div className=" max-w-[700px] w-full overflow-hidden">
+        <div className="flex gap-14 rounded-lg w-full  p-6  relative bg-black max-sm:flex-col">
+          <div className=" max-w-[700px] w-full overflow-hidden max-sm:max-w-[300px]">
             <Image
               className="object-cover max-w-full rounded-lg"
               src={"/newsarea/news-1.jpg"}
@@ -32,11 +32,11 @@ export function NewsArea() {
               height={80}
             />
           </div>
-          <div className=" pt-2 pr-20">
+          <div className=" pt-2 pr-20 max-sm:pr-10">
             <h5 className=" text-blue-500 mb-5 text-sm tracking-widest font-medium">
               Mobile Development
             </h5>
-            <h1 className=" text-white text-3xl leading-9 font-medium mb-6 -tracking-tight">
+            <h1 className=" text-white text-3xl leading-9 font-medium mb-6 -tracking-tight max-sm:tracking-normal ">
               OpenAI launches new alignment division to tackle risks of
               superintelligent AI
             </h1>
@@ -60,18 +60,18 @@ export function NewsArea() {
             </a>
           </div>
         </div>
-        <div className="pt-6 gap-6 flex items-start">
-          <div className="flex-1 bg-blue-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden">
+        <div className="pt-6 gap-6 flex items-start max-sm:flex-col">
+          <div className="flex-1 bg-blue-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
             <div className=" overflow-hidden mb-12">
               <Image
-                className=" rounded-lg block w-full object-cover max-w-full"
+                className=" rounded-lg block w-full object-cover max-w-full max-sm:w-[250px]"
                 src="/newsarea/news-2.jpg"
                 alt=""
                 width={400}
                 height={300}
               />
             </div>
-            <div className=" pr-24 pl-2">
+            <div className=" pr-24 pl-2 max-sm:pr-10">
               <div className="">
                 <h5 className=" mb-5 text-sm tracking-wider text-blue-500 uppercase">
                   Web Development
@@ -109,17 +109,17 @@ export function NewsArea() {
               </a>
             </div>
           </div>
-          <div className="flex-1 bg-blue-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden">
+          <div className="flex-1 bg-blue-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
             <div className=" overflow-hidden mb-12">
               <Image
-                className=" rounded-lg block w-full object-cover max-w-full"
+                className=" rounded-lg block w-full object-cover max-w-full max-sm:w-[250px]"
                 src="/newsarea/news-2.jpg"
                 alt=""
                 width={400}
                 height={300}
               />
             </div>
-            <div className=" pr-24 pl-2">
+            <div className=" pr-24 pl-2 max-sm:pr-10">
               <div className="">
                 <h5 className=" mb-5 text-sm tracking-wider text-blue-500 uppercase">
                   Web Development

@@ -50,7 +50,7 @@ export function NavBar() {
 
   return (
     <nav onMouseEnter={() => setHovering(null)}>
-      <ul className="flex xl:flex-row gap-10 list-none -z-10">
+      <ul className="flex xl:flex-row gap-10 list-none -z-10 max-sm:hidden">
         {NavLinks.map((navlink) => (
           <li
             key={navlink.id}

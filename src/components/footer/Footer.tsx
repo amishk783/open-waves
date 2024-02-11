@@ -6,7 +6,7 @@ export function Footer() {
       <div className="max-container">
         <Prefooter />
         <div className="flex  border-b-[1px] border-slate-400 border-opacity-60">
-          <div className="flex flex-1  gap-5 justify-around pr-10 pb-12 mt-24 font-medium  max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+          <div className="flex flex-1  gap-5 justify-around pr-10 pb-12 mt-24 font-medium  max-md:flex-wrap max-md:mt-10 max-md:max-w-full max-sm:pr-1">
             <div className="flex flex-col basis-0">
               <h2 className="text-base leading-4 text-white">Services</h2>
               <div className="mt-10 text-base leading-6 text-white text-opacity-80">
@@ -128,7 +128,7 @@ export function Footer() {
               </a>
             </nav>
           </div>
-          <div className="flex flex-col items-center  px-20 pt-px pb-7 mt-24 text-base leading-4 text-white whitespace-nowrap before:absolute before:w-[1px] before:bg-slate-200 before:h-[369px] before:opacity-20 before:left-[70%] max-md:px-5">
+          <div className="flex flex-col items-center  px-20 pt-px pb-7 mt-24 text-base leading-4 text-white whitespace-nowrap before:absolute before:w-[1px] before:bg-slate-200 before:h-[369px] before:opacity-20 before:left-[70%] max-md:px-5 max-sm:hidden">
             <div>Phone</div>
             <p className="mt-9 leading-10 text-white text-opacity-80">
               {" "}
