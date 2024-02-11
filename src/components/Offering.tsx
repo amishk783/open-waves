@@ -25,28 +25,28 @@ const services: { title: string; description: string; image: string }[] = [
 
 export function Offering() {
   return (
-    <section className=" pt-44 pb-44">
+    <section className="pt-44 pb-44 max-sm:pt-20 max-sm:pb-20 ">
       <div className="max-container">
-        <div className=" mb-24 items-end justify-between flex">
+        <div className=" mb-24 items-end justify-between flex max-sm:flex-col max-sm:mb-12">
           <div className="">
-            <div className=" mb-7 font-medium text-base  tracking-widest leading-[1.2px] uppercase text-blue-500 max-md:max-w-full max-md:text-4xl max-md:leading-10">
+            <div className=" mb-7 font-medium text-base  tracking-widest leading-[1.2px] uppercase text-blue-500 max-md:max-w-full max-md:text-sm max-md:leading-10 max-sm:mb-4">
               WHAT WE’RE OFFERING
             </div>
-            <h1 className=" mb-5 font-medium text-6xl tracking-tighter  bg-sky-600S text-neutral-800 max-md:max-w-full max-md:text-4xl max-md:leading-10">
+            <h1 className=" mb-5 font-medium text-6xl tracking-tighter  bg-sky-600S text-neutral-800 max-md:max-w-full max-md:text-5xl max-md:leading-12">
               Dealing in all professional <br /> IT services.
             </h1>
           </div>
-          <p className=" text-xl font-normal text-slate-600">
+          <p className=" text-xl font-normal text-slate-600 text-left">
             One fundamental aspect of IT services is infrastructure management.{" "}
-            <br /> This involves the design, implementation, and maintenance of
-            the <br /> hardware, software, networks, and servers.
+            This involves the design, implementation, and maintenance of the{" "}
+            hardware, software, networks, and servers.
           </p>
         </div>
-        <div className="flex gap-5 justify-between mt-28 max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+        <div className="flex gap-5 justify-between mt-28 max-sm:flex-col max-md:mt-10 max-md:max-w-full ">
           {services.map((service) => (
             <div
               key={service.title}
-              className="flex flex-col flex-1 px-9 py-12 bg-white rounded-xl shadow-sm max-md:px-5"
+              className="flex flex-col flex-1 px-9 py-12 bg-white rounded-xl shadow-sm max-md:px-5 max-sm:py-1"
             >
               <Image
                 src={service.image}
@@ -63,11 +63,11 @@ export function Offering() {
               </p>
             </div>
           ))}
-          <div className="flex flex-col flex-1 pb-11 bg-white rounded-xl shadow-sm">
-            <div className="justify-center self-end px-5 py-3 mr-6 text-sm font-medium leading-4 text-white whitespace-nowrap bg-blue-700 rounded-xl aspect-[2.09] max-md:pr-5 max-md:mr-2.5">
+          <div className="flex flex-col flex-1 pb-11 bg-white rounded-xl shadow-sm ">
+            <div className="justify-center self-end px-5 py-3 mr-6 text-sm font-medium leading-4 text-white whitespace-nowrap bg-blue-700 rounded-xl aspect-[2.09] max-md:pr-5 max-md:mr-2.5 max-sm:pt-2">
               Free!
             </div>
-            <div className="flex flex-col px-9 pt-2 max-md:px-5">
+            <div className="flex flex-col px-9 pt-2 max-md:px-5 max-sm:pt-0">
               <Image
                 src="/service-icon-5.svg"
                 className="mt-7 aspect-[1.02] w-[46px]"

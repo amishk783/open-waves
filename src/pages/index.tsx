@@ -18,11 +18,13 @@ import { NewsArea } from "@/components/newarea/NewArea";
 import { ContactArea } from "@/components/ContactArea";
 import { Footer } from "@/components/footer/Footer";
 
- { return (
+
+export default function Home() {
+  return (
     <Fragment>
       <Header />
       <div className="flex justify-center">{/* <NavigationMenuDemo /> */}</div>
-      <main className="">
+      <main className=" overflow-hidden">
         <Hero />
         <RoadMap />
         <Offering />

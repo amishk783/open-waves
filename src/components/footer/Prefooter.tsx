@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Prefooter() {
   return (
-    <div className="z-10 flex justify-between items-center bg-black border-b-[1px] border-opacity-35 border-slate-300 pb-24">
+    <div className="z-10 flex justify-between items-center bg-black border-b-[1px] border-opacity-35 border-slate-300 pb-24 max-sm:flex-col">
       <div className="flex flex-col self-stretch my-auto max-md:mt-10 before:absolute before:w-[1px] before:bg-slate-200 before:h-[369px] before:opacity-20 before:left-1/2 ">
         <Image src="/logo.png" alt="contact" width={171} height={34} />
         <header className="mt-10 text-lg leading-7 text-white text-opacity-80">

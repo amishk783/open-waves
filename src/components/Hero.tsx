@@ -2,7 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 export function Hero() {
   return (
-    <div className="flex justify-center items-center px-16 pt-12 w-full max-md:px-5 max-md:max-w-full">
+    <div className="flex justify-center items-center px-16 pt-12 w-full max-md:px-5 max-md:max-w-full ">
       <div className="justify-center pb-12 mt-20 max-w-full border-b border-solid border-b-zinc-300 w-[1545px] max-md:pr-5 max-md:mt-10">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
           <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
@@ -11,22 +11,17 @@ export function Hero() {
                 EMPOWERMENT
               </div>
               <div className="mt-7 text-8xl tracking-tighter leading-[82px] text-neutral-800 max-md:max-w-full max-md:text-4xl max-md:leading-10">
-                Seamless IT for your
-                <br />
-                business, boosting
-                <br />
-                your growth.
+                Seamless IT for your business, boosting your growth.
               </div>
-              <div className="mt-11 text-2xl leading-10 text-neutral-800 max-md:mt-10 max-md:mr-1.5 max-md:max-w-full">
+              <div className="mt-11 text-2xl leading-10 text-neutral-800 max-md:mt-10 max-md:mr-1.5 max-md:max-w-full max-sm:text-lg">
                 We provide the expertise and support to propel your business
-                <br />
                 forward in the digital landscape.
               </div>
-              <div className="flex gap-4 self-start mt-9 text-lg leading-7">
-                <div className="grow justify-center px-7 py-5 whitespace-nowrap bg-blue-700 rounded-[30px] text-stone-50 max-md:px-5">
+              <div className="flex gap-4 self-start mt-9 text-lg leading-7 max-sm:flex-col ">
+                <div className="grow justify-center px-7 py-5 whitespace-nowrap bg-blue-700 rounded-[30px] text-stone-50 max-md:px-4 max-md:py-3">
                   Learn More
                 </div>
-                <div className="flex gap-3 justify-between px-7 py-5 text-blue-700 bg-blue-700 bg-opacity-10 rounded-[30px] max-md:px-5">
+                <div className="flex gap-3 justify-between px-7 py-5 text-blue-700 bg-blue-700 bg-opacity-10 rounded-[30px] max-md:px-4 max-md:py-3">
                   <div>Let's Talk</div>
                   {/* <img
                     loading="lazy"
@@ -38,11 +33,11 @@ export function Hero() {
             </div>
           </div>{" "}
           <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-            <div className="flex flex-col max-md:mt-10 max-md:max-w-full">
-              <div className="flex overflow-hidden relative flex-col items-start pt-12 pr-16 w-full min-h-[399px] max-md:pr-5 max-md:max-w-full">
+            <div className="flex flex-col max-md:max-w-full">
+              <div className="flex overflow-hidden relative flex-col items-start pt-12 pr-16 w-full min-h-[399px] max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]">
                 <Image
                   src="/hero-bg1-1.png"
-                  className="object-cover absolute inset-0 size-full"
+                  className="object-cover absolute inset-0 size-full max-sm:hidden"
                   alt="hero background"
                   width={450}
                   height={200}
@@ -64,7 +59,7 @@ export function Hero() {
                   </div>
                 </div>
               </div>
-              <div className="mt-6 max-md:max-w-full">
+              <div className="mt-6 max-md:max-w-full max-sm:mt-0">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
                   <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                     <div className="flex grow gap-2.5 justify-between px-12 py-12 w-full text-base font-medium leading-4 whitespace-nowrap bg-white rounded-xl shadow-md text-zinc-900 max-md:px-5 max-md:mt-6">

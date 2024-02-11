@@ -34,11 +34,11 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, onScroll]);
 
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="flex  overflow-hidden">
-        <div className="flex flex-col justify-start w-full translate-x-48 max-w-[1086px]  max-md:ml-0 max-md:w-full ">
+    <div className="flex flex-col items-center justify-center max-sm:overflow-hidden">
+      <div className="flex  overflow-hidden ">
+        <div className="flex flex-col justify-start w-full translate-x-48 max-w-[1086px] max-sm:max-w-[300px]  max-sm:translate-x-1 max-md:ml-0 max-md:w-full ">
           <div
-            className="px-5 py-5 mt-20 max-md:mt-10  max-md:max-w-full overflow-hidden"
+            className="px-5 py-5 mt-20 max-md:mt-10  max-md:max-w-full overflow-hidden "
             ref={emblaRef}
           >
             <div className="backface-hidden flex rounded-lg ">
@@ -47,7 +47,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
                 console.log(content);
                 return (
                   <div key={index} className="">
-                    <div className="flex justify-between w-[650px] flex-grow-0 flex-shrink-0 mr-[-250px] transition-transform duration-300 transform hover:scale-105">
+                    <div className="flex justify-between w-[650px] flex-grow-0 flex-shrink-0 mr-[-250px] max-sm:mr-[0px] transition-transform duration-300 transform hover:scale-105 max-sm:w-[300px]">
                       <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
                         <div
                           className={clsx(
