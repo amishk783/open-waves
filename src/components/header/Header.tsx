@@ -2,10 +2,6 @@ import Image from "next/image";
 
 import { NavBar } from "./NavBar";
 
-
-
-
-
 export function Header() {
   return (
     <header className="w-full bg-white sticky top-0 z-[1024] border-b-2 border-b-slate">
@@ -16,12 +12,14 @@ export function Header() {
             <NavBar />
           </div>
           <div className="m-0 p-0">
-            <div className="flex flex-row">
-              <div className="flex-col items-center font-normal text-lg px-10">
-                <h1 className="mb-1">Call us</h1>
+            <div className="flex gap-10 items-center">
+              <div className="relative   leading-[1] font-normal text-lg px-10">
+                <a className=" block text-blue-400 font-bold tracking-[0.5px] text-base mb-2">
+                  Call us
+                </a>
                 9971545684
               </div>
-              <a className="px-6 my-2 text-white rounded-full cursor-pointer relative flex align-middle bg-blue-600  z-1 items-center">
+              <a className="px-6 py-[13px] text-white whitespace-nowrap rounded-full cursor-pointer relative inline-flex overflow-hidden gap-2 align-middle bg-blue-600  z-1 items-center">
                 Contact Us
               </a>
             </div>

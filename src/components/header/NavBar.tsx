@@ -1,10 +1,11 @@
 import { useRef, useState } from "react";
-
+import { motion } from "framer-motion";
 import { Menu2 } from "@/lib/Menu2";
 import { ChevronDown } from "lucide-react";
 import { Menu0 } from "./Menu0";
 import { Menu3 } from "./Menu3";
 import { Menu1 } from "./Menu1";
+import clsx from "clsx";
 
 const NavLinks: { id: number; service: string }[] = [
   {
@@ -26,46 +27,51 @@ const NavLinks: { id: number; service: string }[] = [
 ];
 
 export function NavBar() {
+  const menuRef = useRef(null);
   const [hovering, setHovering] = useState<number | null>(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   // const [popoverLeft, setPopoverLeft] = useState<number | null>(null);
   // const [popoverHeight, setPopoverHeight] = useState<number | null>(null);
   const [isLayoutOpen, setIsLayoutOpen] = useState<boolean>(false);
 
+  const handleMouseEnter = (id: number) => {
+    console.log(id);
+    setHovering(id);
+    setIsMenuOpen(true);
+  };
+  const handleMouseLeave = () => {
+    setIsMenuOpen(false);
+    setHovering(null);
+  };
+  const handleMenuMouseEnter = () => {
+    setHovering(hovering);
+  };
+
   return (
     <nav onMouseEnter={() => setHovering(null)}>
-      <ul className="flex xl:flex-row gap-10 list-none py-6">
+      <ul className="flex xl:flex-row gap-10 list-none -z-10">
         {NavLinks.map((navlink) => (
           <li
-            key={navlink.service}
-            onMouseEnter={(event) => setHovering(navlink.id)}
-            className="px-2 py-1 rounded-full space-y-10 hover:bg-zinc-400  hover:bg-opacity-20"
+            key={navlink.id}
+            onMouseEnter={(event) => handleMouseEnter(navlink.id)}
+            onMouseLeave={(event) => handleMouseLeave()}
+            className=" leading-[106px] rounded-full  hover:bg-opacity-20"
           >
-            <span
-              onMouseEnter={() => {
-                setIsLayoutOpen(true);
-              }}
-              onMouseLeave={() => {
-                setIsLayoutOpen(false);
-              }}
-              className="flex gap-1"
+            <a className="pr-4  text-lg hover:text-blue-500">{navlink.service}</a>
+            <div
+              onMouseEnter={handleMenuMouseEnter}
+              onMouseLeave={handleMouseLeave}
+              className="top-full z-10 bg-red-600 "
             >
-              {navlink.service} <ChevronDown />
-            </span>
-            {hovering === 0 ? (
-              <Menu0 />
-            ) : hovering === 1 ? (
-              <Menu1 />
-            ) : hovering === 2 ? (
-              <Menu2 />
-            ) : hovering === 3 ? (
-              <Menu3 />
-            ) : null}
-            {/* {typeof hovering === "number" && (
-              <div>
-               
-              </div>
-            )} */}
-            {/* {isLayoutOpen && <Menu2 />} */}
+              {hovering === 1 ? (
+                <Menu0 />
+              ) : hovering === 2 ? (
+                <Menu1 />
+              ) : hovering === 3 ? (
+                <Menu2 />
+              ) : null}
+            </div>
           </li>
         ))}
       </ul>

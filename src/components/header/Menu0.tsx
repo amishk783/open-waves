@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import clsx from "clsx";
 const icons: { slink: string; image: string }[] = [
   {
     slink: "",
@@ -52,9 +52,9 @@ const components: {
 
 export function Menu0() {
   return (
-    <div className="absolute left-0 w-full h-100vh bg-blue-200 overflow-x-hidden ">
-      {" "}
+    <div className="absolute left-0 w-full h-100vh bg-blue-200 overflow-x-hidden">
       {/* outline */}
+      <div className=" absolute left-0 -top-6 right-0 h-6 bg-red-700"></div>
       <div className="">
         <div className="max-container flex ">
           <div className="flex-1 pt-10 pr-[95px]">

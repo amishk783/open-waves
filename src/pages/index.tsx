@@ -14,41 +14,14 @@ import { Studio } from "@/components/studio/Studio";
 import { AboutArea } from "@/components/AboutArea";
 import { Projects } from "@/components/Project/Projects";
 import { ProjectSlider } from "@/components/Project/ProjectSlider";
-
-export type Todo = {
-  id: number;
-  text: string;
-};
-
-let initalTodos: Todo[] = [{ id: 1, text: "hello" }];
-export default function Home() {
-  const [todos, setTodos] = useState<Todo[]>(initalTodos);
-
-  const onClickHandler = (id: number) => {
-    setTodos((prevState) => prevState.filter((todo) => todo.id !== id));
-    console.log(id);
-
-    console.log(id);
-  };
-
-  const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const inputValue = (e.currentTarget.elements[0] as HTMLInputElement).value;
-    setTodos((prevState) => {
-      const newTodo: Todo = {
-        id: prevState.length + 1,
-        text: inputValue, // Assuming the input is the first element in the form
-      };
-      return [...prevState, newTodo];
-    });
-  };
+import { NewsArea } from "@/components/newarea/NewArea";
+import { ContactArea } from "@/components/ContactArea";
+import { Footer } from "@/components/footer/Footer";
 
   return (
     <Fragment>
-      <div className="flex justify-center">
-        {/* <NavigationMenuDemo /> */}
-        <Header />
-      </div>
+      <Header />
+      <div className="flex justify-center">{/* <NavigationMenuDemo /> */}</div>
       <main className="">
         <Hero />
         <RoadMap />
@@ -56,7 +29,9 @@ export default function Home() {
         <Studio />
         <AboutArea />
         <Projects />
-        
+        <NewsArea />
+        <ContactArea />
+        <Footer />
       </main>
     </Fragment>
   );
