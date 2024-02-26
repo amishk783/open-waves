@@ -56,7 +56,7 @@ export function ContactArea() {
       <div className="flex max-container space-x-10 max-sm:space-x-0 mb-40 max-sm:flex-col" >
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col grow px-20 py-12 w-full bg-blue-50 rounded-xl max-md:px-5 max-md:mt-6 max-md:max-w-full"
+          className="flex flex-col grow px-20 py-12 w-full bg-red-50 rounded-xl max-md:px-5 max-md:mt-6 max-md:max-w-full"
         >
           <header className="mt-14 text-sm font-medium leading-4 text-blue-700 uppercase tracking-[5px] max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
             {" "}
@@ -166,14 +166,14 @@ export function ContactArea() {
           </div>
           <button
             type="submit"
-            className="justify-center items-center px-16 py-5 mt-8 text-lg leading-7 text-center whitespace-nowrap bg-blue-700 rounded-md text-stone-50 max-md:px-5 max-md:mr-0.5 max-md:max-w-full"
+            className="justify-center items-center px-16 py-5 mt-8 text-lg leading-7 text-center whitespace-nowrap bg-red-700 rounded-md text-stone-50 max-md:px-5 max-md:mr-0.5 max-md:max-w-full"
           >
             {" "}
             Get Started{" "}
           </button>
         </form>
         <div
-          className="flex justify-center items-center px-16 py-12 w-full bg-blue-50 rounded-xl max-md:px-[5px] max-sm:px-1 max-sm:py-2 max-md:mt-6"
+          className="flex justify-center items-center px-16 py-12 w-full bg-red-50 rounded-xl max-md:px-[5px] max-sm:px-1 max-sm:py-2 max-md:mt-6"
           aria-label="Statistics"
         >
           <div className="flex flex-col mt-28 max-w-full w-[191px] max-md:mt-10">
@@ -223,7 +223,7 @@ export function ContactArea() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col grow items-start px-16 py-12 mx-auto w-full bg-blue-50 rounded-xl max-md:px-5 max-md:mt-6">
+        <div className="flex flex-col grow items-start px-16 py-12 mx-auto w-full bg-red-50 rounded-xl max-md:px-5 max-md:mt-6">
           <div className="flex flex-col pb-11 mt-32 max-w-full border-b border-solid border-b-zinc-900 border-b-opacity-20 w-[150px] max-md:mt-10">
             <Image
               src="/support-icon.svg"

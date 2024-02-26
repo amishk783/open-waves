@@ -61,7 +61,7 @@ export function NewsArea() {
           </div>
         </div>
         <div className="pt-6 gap-6 flex items-start max-sm:flex-col">
-          <div className="flex-1 bg-blue-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
+          <div className="flex-1 bg-red-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
             <div className=" overflow-hidden mb-12">
               <Image
                 className=" rounded-lg block w-full object-cover max-w-full max-sm:w-[250px]"
@@ -109,7 +109,7 @@ export function NewsArea() {
               </a>
             </div>
           </div>
-          <div className="flex-1 bg-blue-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
+          <div className="flex-1 bg-red-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
             <div className=" overflow-hidden mb-12">
               <Image
                 className=" rounded-lg block w-full object-cover max-w-full max-sm:w-[250px]"

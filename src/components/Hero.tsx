@@ -32,6 +32,9 @@ export function Hero() {
               </div>
             </div>
           </div>{" "}
+
+
+          
           <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col max-md:max-w-full">
               <div className="flex overflow-hidden relative flex-col items-start pt-5 pr-16 w-full min-h-[399px] max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]">
