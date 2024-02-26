@@ -14,8 +14,8 @@ export default async function handler(
   console.log("backed:" + data);
 
   const success = await resend.emails.send({
-    from: "onboarding@resend.dev",
-    to: "amishkumar800@gmail.com",
+    from: "amishkumar800@gmail.com",
+    to: `${data.email}`,
     subject: "Hey, you missed me",
     html: `<p>Heres <strong>your details</strong>!</p>
     <h1>First Name:${data.firstName}</h1>
