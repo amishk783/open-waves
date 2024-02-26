@@ -2,7 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 export function Hero() {
   return (
-    <div className="flex justify-center items-center px-16 pt-12 w-full max-md:px-5 max-md:max-w-full ">
+    <div className="flex justify-center items-center px-16 pt-5 w-full max-md:px-5 max-md:max-w-full ">
       <div className="justify-center pb-12 mt-20 max-w-full border-b border-solid border-b-zinc-300 w-[1545px] max-md:pr-5 max-md:mt-10">
         <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
           <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
@@ -34,23 +34,23 @@ export function Hero() {
           </div>{" "}
           <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col max-md:max-w-full">
-              <div className="flex overflow-hidden relative flex-col items-start pt-12 pr-16 w-full min-h-[399px] max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]">
-                <Image
+              <div className="flex overflow-hidden relative flex-col items-start pt-5 pr-16 w-full min-h-[399px] max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]">
+                {/*<Image
                   src="/hero-bg1-1.png"
                   className="object-cover absolute inset-0 size-full max-sm:hidden"
                   alt="hero background"
                   width={450}
                   height={200}
-                />
-                <div className="flex relative gap-4 justify-between px-20 py-11 mt-56 bg-white rounded-xl shadow-sm max-md:px-5 max-md:mt-10">
-                  <Image
+                />*/}
+                <div className="flex relative gap-4 justify-between px-20 py-11 mt-20 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
+                 {/* <Image
                     src="/hero-icon1.svg"
                     alt="hero-icon"
                     width={50}
-                    height={50}
-                  />
+              height={50} 
+              />*/}
                   <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
-                    +8
+                    2+
                   </div>
                   <div className="self-start mt-2 text-base leading-5 text-zinc-900">
                     Years
@@ -58,6 +58,7 @@ export function Hero() {
                     <span className="text-zinc-900">Experience</span>
                   </div>
                 </div>
+                
               </div>
               <div className="mt-6 max-md:max-w-full max-sm:mt-0">
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
