@@ -1,8 +1,12 @@
 import * as React from "react";
 import Image from "next/image";
+import { easeIn, motion } from "framer-motion";
 export function Hero() {
   return (
+
     <div className="flex  justify-center items-center px-12 pt-12 w-full max-md:px-5 max-md:max-w-full bg-gradient-to-r from-red-200 via-purple-50 to-blue-200">
+
+
       <div className="-z-10 bg-white">
         <svg viewBox="0 0 500 200">
           <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
@@ -15,19 +19,28 @@ export function Hero() {
               <div className="text-sm leading-4 text-red-700 uppercase tracking-[5px] max-md:max-w-full">
                 EMPOWERMENT
               </div>
-              <div className="mt-7 text-7xl tracking-tighter leading-[82px] text-neutral-800 max-md:max-w-full max-md:text-4xl max-md:leading-10">
+
+              <motion.div
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                className="mt-7 text-8xl tracking-tighter leading-[82px] text-neutral-800 max-md:max-w-full max-md:text-4xl max-md:leading-10"
+              >
+
                 Seamless IT for your business, boosting your growth.
-              </div>
+              </motion.div>
               <div className="mt-11 text-2xl leading-10 text-neutral-800 max-md:mt-10 max-md:mr-1.5 max-md:max-w-full max-sm:text-lg">
                 We provide the expertise and support to propel your business
                 forward in the digital landscape.
               </div>
               <div className="flex gap-4 self-start mt-9 text-lg leading-7 max-sm:flex-col ">
+
                 <div className="grow justify-center px-7 py-5 whitespace-nowrap bg-red-700 rounded-[30px] text-stone-50 max-md:px-4 max-md:py-3">
                   Learn More
                 </div>
                 <div className="flex gap-3 shadow-md justify-between px-7 py-5 text-red-700 hover:text-white bg-red-100 hover:bg-red-600 rounded-[30px] max-md:px-4 max-md:py-3">
                   <button>Let's Talk</button>
+
                   {/* <img
                     loading="lazy"
                     src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACwAAAAAAQABAAACAkQBADs="
@@ -41,16 +54,26 @@ export function Hero() {
 
           
           <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+
             <div className="flex flex-col max-md:max-w-full">
               <div className="flex overflow-hidden relative flex-col items-start pt-12 pr-16 w-full max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]">
                 {/*<Image
+
                   src="/hero-bg1-1.png"
                   className="object-cover absolute inset-0 size-full max-sm:hidden"
                   alt="hero background"
                   width={450}
                   height={200}
                 /> */}
-                <div className="flex xl:flex-row gap-6">
+
+                <motion.div
+                  initial={{ transform: "translateX(100px)" }}
+                  animate={{ transform: "translateX(0px)" }}
+                  exit={{ transform: "translateX(-100px)" }}
+                  transition={{ duration: 1, ease: "easeIn" }}
+                  className="flex xl:flex-row gap-12"
+                >
+
                   <div className="flex relative gap-4 justify-between px-20 py-11 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
                     <Image
                       src="/hero-icon1.svg"
@@ -83,10 +106,17 @@ export function Hero() {
                       <span className="text-zinc-900">Experience</span>
                     </div>
                   </div>
-                </div>
-                
+
+                </motion.div>
+
               </div>
-              <div className="mt-6 max-md:max-w-full max-sm:mt-0">
+              <motion.div
+                initial={{ transform: "translateX(-100px)" }}
+                animate={{ transform: "translateX(0px)" }}
+                exit={{ transform: "translateX(-100px)" }}
+                transition={{ duration: 1, ease: "easeIn" }}
+                className="mt-6 max-md:max-w-full max-sm:mt-0"
+              >
                 <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
                   <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
                     <div className="flex relative gap-4 justify-between px-20 py-11 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
@@ -124,7 +154,7 @@ export function Hero() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
