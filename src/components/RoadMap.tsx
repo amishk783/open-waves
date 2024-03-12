@@ -32,7 +32,7 @@ export function RoadMap() {
   return (
     <section className="pt-24 ">
       <div className="max-container px-4 max-sm:px-3">
-        <div className=" flex w-full overflow bg-black justify-center relative rounded-md p-12 z-1 max-sm:flex-col max-sm:p-10">
+        <div className=" flex w-full overflow bg-[#281F32] justify-center relative rounded-md p-12 z-1 max-sm:flex-col max-sm:p-10">
           <motion.div
             initial={{ y: -1000 }}
             animate={{ y: 0 }}
@@ -53,7 +53,7 @@ export function RoadMap() {
           </motion.div>
           <div className="flex flex-col items-start justify-between w-[17%] max-md:ml-0 max-md:w-full">
             <div className=" text-white max-md:mt-10 max-sm:mt-2">
-              <div className="text-sm font-medium leading-4 text-blue-500 uppercase tracking-[5px]">
+              <div className="text-sm font-medium leading-4 text-red-500 uppercase tracking-[5px]">
                 Our Model
               </div>
               <motion.div
@@ -72,8 +72,8 @@ export function RoadMap() {
               <p className="mt-8 text-lg text-wrap whitespace-nowrap">
                 Save time and money with <br /> our powerful method.
               </p>
-              <div className="flex gap-3 mr-28 px-4 py-3 mt-60 text-lg leading-7 bg-blue-700 rounded-[30px] text-stone-50 max-md:px-6 max-sm:py-4 max-md:mt-10 max-sm:whitespace-nowrap">
-                <div className="flex-auto">Learn More</div>
+              <div className="flex gap-3 justify-center mr-28 px-4 py-3 mt-60 text-lg leading-7 bg-red-700 rounded-[30px] text-stone-50 max-md:px-6 max-sm:py-4 max-md:mt-10 max-sm:whitespace-nowrap">
+                <div className="flex-auto text-center">Learn More</div>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ export function RoadMap() {
                     />
                   </div>
                   <div className=" flex-1  text-base font-medium ">
-                    <h4 className="text-cyan-500 text-base max-sm:text-sm">
+                    <h4 className="text-[#D8466A] text-base max-sm:text-sm">
                       {roadmap.title}
                     </h4>
                     <p className=" text-slate-500 max-sm:text-sm">
@@ -120,7 +120,7 @@ export function RoadMap() {
                   />
                 </div>
                 <div className=" flex-1  text-base font-medium ">
-                  <h4 className="text-cyan-500 text-base">SEO </h4>
+                  <h4 className="text-[#D8466A] text-base">SEO </h4>
                   <p className=" text-slate-500">Optimization</p>
                 </div>
               </div>
@@ -137,7 +137,7 @@ export function RoadMap() {
                   />
                 </div>
                 <div className=" flex-1  text-base font-medium ">
-                  <h4 className="text-cyan-500 text-base">Back-End</h4>
+                  <h4 className="text-[#D8466A] text-base">Back-End</h4>
                   <p className=" text-slate-500">Development</p>
                 </div>
               </div>
@@ -154,7 +154,7 @@ export function RoadMap() {
                   />
                 </div>
                 <div className=" flex-1  text-base font-medium ">
-                  <h4 className="text-cyan-500 text-base">Digital</h4>
+                  <h4 className="text-[#D8466A] text-base">Digital</h4>
                   <p className=" text-slate-500">Marketing</p>
                 </div>
               </div>
