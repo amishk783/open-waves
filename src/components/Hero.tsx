@@ -2,20 +2,20 @@ import * as React from "react";
 import Image from "next/image";
 export function Hero() {
   return (
-    <div className="flex  justify-center items-center px-16 pt-12 w-full max-md:px-5 max-md:max-w-full bg-gradient-to-r from-red-200 via-purple-50 to-blue-200">
+    <div className="flex  justify-center items-center px-12 pt-12 w-full max-md:px-5 max-md:max-w-full bg-gradient-to-r from-red-200 via-purple-50 to-blue-200">
       <div className="-z-10 bg-white">
         <svg viewBox="0 0 500 200">
           <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
         </svg>
       </div>
       <div className="justify-center pb-12 mt-20 max-w-full border-b border-solid border-b-zinc-300 w-[1545px] max-md:pr-5 max-md:mt-10">
-        <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
+        <div className="flex gap-3 max-md:flex-col max-md:gap-0 max-md:">
           <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col mt-11 font-medium max-md:mt-10 max-md:max-w-full">
               <div className="text-sm leading-4 text-red-700 uppercase tracking-[5px] max-md:max-w-full">
                 EMPOWERMENT
               </div>
-              <div className="mt-7 text-8xl tracking-tighter leading-[82px] text-neutral-800 max-md:max-w-full max-md:text-4xl max-md:leading-10">
+              <div className="mt-7 text-7xl tracking-tighter leading-[82px] text-neutral-800 max-md:max-w-full max-md:text-4xl max-md:leading-10">
                 Seamless IT for your business, boosting your growth.
               </div>
               <div className="mt-11 text-2xl leading-10 text-neutral-800 max-md:mt-10 max-md:mr-1.5 max-md:max-w-full max-sm:text-lg">
@@ -42,7 +42,7 @@ export function Hero() {
           
           <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
             <div className="flex flex-col max-md:max-w-full">
-              <div className="flex overflow-hidden relative flex-col items-start pt-12 pr-16 w-full min-h-[399px] max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]">
+              <div className="flex overflow-hidden relative flex-col items-start pt-12 pr-16 w-full max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]">
                 {/*<Image
                   src="/hero-bg1-1.png"
                   className="object-cover absolute inset-0 size-full max-sm:hidden"
@@ -50,7 +50,7 @@ export function Hero() {
                   width={450}
                   height={200}
                 /> */}
-                <div className="flex xl:flex-row gap-12">
+                <div className="flex xl:flex-row gap-6">
                   <div className="flex relative gap-4 justify-between px-20 py-11 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
                     <Image
                       src="/hero-icon1.svg"
