@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
 const servicedisplay: {
   id: number;
   serviceTitle: string;
@@ -114,11 +115,16 @@ export function StudioDisplay({ serviceId }: { serviceId: number }) {
             </div>
           </div>
         </div>
-        <div className="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1, ease: "easeIn" }}
+          className="flex flex-col ml-5 w-2/5 max-md:ml-0 max-md:w-full"
+        >
           <div className="flex flex-col px-14 py-12 w-full bg-white rounded-xl max-md:px-5 max-md:mt-6 max-md:max-w-full">
             <Image
               className="size-full w-20"
-              src={matchedService?.descriptionImageSrc}
+              src={matchedService?.descriptionImageSrc!}
               alt="description icon"
               width={20}
               height={20}
@@ -148,7 +154,7 @@ export function StudioDisplay({ serviceId }: { serviceId: number }) {
                   className="self-end mt-6 aspect-square w-[53px]"
                 /> */}
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

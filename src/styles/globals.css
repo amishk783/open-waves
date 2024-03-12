@@ -97,6 +97,7 @@
 @layer components {
   .hoverover {
     background: rgb(41, 38, 38);
+    
   }
 
   .active-studio {
