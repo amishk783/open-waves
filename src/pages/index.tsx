@@ -2,10 +2,8 @@ import Image from "next/image";
 
 import Button from "./Button";
 
-import { Fragment, useState } from "react";
-import { todo } from "node:test";
-import { NavigationMenuDemo } from "@/components/header/NavigationDemo";
-import { NavBar } from "@/components/header/NavBar";
+import { Fragment} from "react";
+
 import { Header } from "@/components/header/Header";
 import { Hero } from "@/components/Hero";
 import { RoadMap } from "@/components/RoadMap";
@@ -13,11 +11,10 @@ import { Offering } from "@/components/Offering";
 import { Studio } from "@/components/studio/Studio";
 import { AboutArea } from "@/components/AboutArea";
 import { Projects } from "@/components/Project/Projects";
-import { ProjectSlider } from "@/components/Project/ProjectSlider";
+
 import { NewsArea } from "@/components/newarea/NewArea";
 import { ContactArea } from "@/components/ContactArea";
 import { Footer } from "@/components/footer/Footer";
-
 
 export default function Home() {
   return (
@@ -37,4 +34,4 @@ export default function Home() {
       </main>
     </Fragment>
   );
- }
+}

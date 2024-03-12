@@ -10,7 +10,7 @@ const SLIDES = Array.from(Array(SLIDE_COUNT + 1).keys()).slice(1);
 
 export function Projects() {
   return (
-    <section className=" justify-end px-px pt-24 pb-28 mt-56 w-full bg-blue-700 bg-opacity-10 max-md:mt-10 max-md:max-w-full">
+    <section className=" justify-end px-px pt-24 pb-28 mt-56 w-full bg-slate-100 bg-opacity-100 max-md:mt-10 max-md:max-w-full">
       <div className="max-container flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
         <div className="flex flex-col w-[44%] max-md:ml-0 max-md:w-full">
           <div className="flex z-10 flex-col grow items-center px-16 pb-12 pt-5 mt-24 w-full text-xl leading-6 text-zinc-900 text-opacity-80 max-md:px-5 max-md:mt-10 max-md:max-w-full">
