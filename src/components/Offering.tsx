@@ -29,7 +29,7 @@ export function Offering() {
       <div className="max-container">
         <div className=" mb-24 items-end justify-between flex max-sm:flex-col max-sm:mb-12">
           <div className="">
-            <div className=" mb-7 font-medium text-base  tracking-widest leading-[1.2px] uppercase text-blue-500 max-md:max-w-full max-md:text-sm max-md:leading-10 max-sm:mb-4">
+            <div className=" mb-7 font-medium text-base  tracking-widest leading-[1.2px] uppercase text-red-500 max-md:max-w-full max-md:text-sm max-md:leading-10 max-sm:mb-4">
               WHAT WE’RE OFFERING
             </div>
             <h1 className=" mb-5 font-medium text-6xl tracking-tighter  bg-sky-600S text-neutral-800 max-md:max-w-full max-md:text-5xl max-md:leading-12">
@@ -64,7 +64,7 @@ export function Offering() {
             </div>
           ))}
           <div className="flex flex-col flex-1 pb-11 bg-white rounded-xl shadow-sm ">
-            <div className="justify-center self-end px-5 py-3 mr-6 text-sm font-medium leading-4 text-white whitespace-nowrap bg-blue-700 rounded-xl aspect-[2.09] max-md:pr-5 max-md:mr-2.5 max-sm:pt-2">
+            <div className="justify-center self-end px-5 py-3 mr-6 text-sm font-medium leading-4 text-white whitespace-nowrap bg-red-700 rounded-xl aspect-[2.09] max-md:pr-5 max-md:mr-2.5 max-sm:pt-2">
               Free!
             </div>
             <div className="flex flex-col px-9 pt-2 max-md:px-5 max-sm:pt-0">
