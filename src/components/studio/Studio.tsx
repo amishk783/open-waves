@@ -31,7 +31,7 @@ export function Studio() {
   return (
     <section className="  bg-slate-100 pt-12 pb-36 max-sm:pb-10  ">
       <div className="flex flex-col mt-24 mb-14 w-full max-w-[1311px] max-md:my-10 max-md:max-w-full max-container">
-        <div className="self-center text-sm font-medium leading-4 text-center text-blue-700 uppercase whitespace-nowrap tracking-[5px]">
+        <div className="self-center text-sm font-medium leading-4 text-center text-[#97203E] uppercase whitespace-nowrap tracking-[5px]">
           CASE STUDIES
           
         </div>

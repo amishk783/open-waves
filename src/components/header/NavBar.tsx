@@ -56,7 +56,7 @@ export function NavBar() {
             key={navlink.id}
             onMouseEnter={(event) => handleMouseEnter(navlink.id)}
             onMouseLeave={(event) => handleMouseLeave()}
-            className=" leading-[106px] rounded-full  hover:bg-opacity-20"
+            className=" leading-[60px] rounded-full  hover:bg-opacity-20"
           >
             <a className="pr-4  text-lg hover:text-blue-500">{navlink.service}</a>
             <div

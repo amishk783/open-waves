@@ -81,32 +81,32 @@ export function StudioDisplay({ serviceId }: { serviceId: number }) {
           <div className="grow px-9 py-7 w-full bg-white rounded-xl max-md:px-5 max-md:mt-6 max-md:max-w-full">
             <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
               <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col grow justify-center w-full text-sm font-medium leading-5 text-blue-700 whitespace-nowrap bg-white rounded-xl shadow-sm max-md:mt-10">
+                <div className="flex flex-col grow justify-center w-full text-sm font-medium leading-5 text-[#97203E] whitespace-nowrap bg-white rounded-xl shadow-sm max-md:mt-10">
                   <div className="flex overflow-hidden relative flex-col items-start pt-2 pr-16 pb-12 pl-6 w-full aspect-[0.86] max-md:px-5">
                     <Image
                       className="object-cover absolute inset-0 size-full"
-                      src={matchedService?.firstImageSrc}
+                      src={matchedService?.firstImageSrc!}
                       alt="description icon"
                       width={180}
                       height={50}
                     />
-                    <div className="relative justify-center px-5 py-3 mb-60 rounded-xl bg-blue-700 bg-opacity-10 max-md:px-5 max-md:mb-10">
+                    <div className="relative justify-center px-5 py-3 mb-60 rounded-xl bg-red-700 bg-opacity-10 max-md:px-5 max-md:mb-10">
                       {matchedService?.firstImageTitle}
                     </div>
                   </div>
                 </div>
               </div>
               <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-                <div className="flex flex-col grow justify-center w-full text-sm font-medium leading-5 text-blue-700 whitespace-nowrap bg-white rounded-xl shadow-sm max-md:mt-10">
+                <div className="flex flex-col grow justify-center w-full text-sm font-medium leading-5 text-[#97203E] whitespace-nowrap bg-white rounded-xl shadow-sm max-md:mt-10">
                   <div className="flex overflow-hidden relative flex-col items-start pt-6 pr-16 pb-12 pl-6 w-full aspect-[0.73] max-md:px-5">
                     <Image
                       className="object-cover absolute inset-0 size-full"
-                      src={matchedService?.secondImageSrc}
+                      src={matchedService?.secondImageSrc!}
                       alt="description icon"
                       width={200}
                       height={50}
                     />
-                    <div className="relative justify-center px-5 py-3 mb-60 rounded-xl bg-blue-700 bg-opacity-10 max-md:px-5 max-md:mb-10">
+                    <div className="relative justify-center px-5 py-3 mb-60 rounded-xl bg-red-700 bg-opacity-10 max-md:px-5 max-md:mb-10">
                       {matchedService?.secondImageTitle}
                     </div>
                   </div>
@@ -145,9 +145,9 @@ export function StudioDisplay({ serviceId }: { serviceId: number }) {
               <br />
               maintain software applications and systems.
             </div>
-            <a className=" w-10 px-3 py-3 h-9 rounded-full bg-blue-500 leading-10 ml-auto">
-              <MoveRight className="" />
-            </a>
+            <button className="w-10 px-3 py-3 h-9 rounded-full bg-red-700 leading-10 ml-auto items-center flex text-white">
+            <MoveRight strokeWidth={3} size={40}  />
+            </button>
             {/* <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ae579939d063c108c5dd05cccf4fa37433a9bf2015360578402455c4f3aa903?apiKey=418e80658b5e4102b77efea2f9b19dd5&"

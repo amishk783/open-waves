@@ -35,9 +35,9 @@ export function Hero() {
               </div>
               <div className="flex gap-4 self-start mt-9 text-lg leading-7 max-sm:flex-col ">
 
-                <div className="grow justify-center px-7 py-5 whitespace-nowrap bg-red-700 rounded-[30px] text-stone-50 max-md:px-4 max-md:py-3">
+                <button className="grow justify-center px-7 py-5 whitespace-nowrap bg-red-700 rounded-[30px] text-stone-50 max-md:px-4 max-md:py-3 hover:scale-110">
                   Learn More
-                </div>
+                </button>
                 <div className="flex gap-3 shadow-md justify-between px-7 py-5 text-red-700 hover:text-white bg-red-100 hover:bg-red-600 rounded-[30px] max-md:px-4 max-md:py-3">
                   <button>Let's Talk</button>
 
@@ -71,7 +71,7 @@ export function Hero() {
                   animate={{ transform: "translateX(0px)" }}
                   exit={{ transform: "translateX(-100px)" }}
                   transition={{ duration: 1, ease: "easeIn" }}
-                  className="flex xl:flex-row gap-12"
+                  className="flex xl:flex-row gap-6"
                 >
 
                   <div className="flex relative gap-4 justify-between px-20 py-11 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
