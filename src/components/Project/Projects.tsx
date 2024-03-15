@@ -15,7 +15,7 @@ export function Projects() {
         <div className="flex flex-col w-[44%] max-md:ml-0 max-md:w-full">
           <div className="flex z-10 flex-col grow items-center px-16 pb-12 pt-5 mt-24 w-full text-xl leading-6 text-zinc-900 text-opacity-80 max-md:px-5 max-md:mt-10 max-md:max-w-full">
             <div className="flex flex-col max-w-full w-[393px]">
-              <div className="text-sm font-medium text-blue-700 uppercase tracking-[5px]">
+              <div className="text-sm font-medium text-[#97203E] uppercase tracking-[5px]">
                 PROJECTS
               </div>
               <h1 className="mt-7 text-5xl font-bold tracking-tighter leading-[56px] text-neutral-800 max-md:text-5xl max-md:leading-14 max-sm:tracking-normal">
@@ -27,15 +27,15 @@ export function Projects() {
               </div>
               <div className="flex flex-col pt-7 pr-16 mt-10 border-t border-solid border-t-zinc-900 border-t-opacity-20 max-md:pr-2z">
                 <div className="flex gap-5 justify-between whitespace-nowrap  max-sm:text-lg max-sm:whitespace-normal">
-                  <span className="self-start w-5 h-5 bg-blue-700 rounded-xl" />
+                  <span className="self-start w-5 h-5 bg-red-700 rounded-xl" />
                   <div className="grow max-sm:grow-0">Managed Services and Products</div>
                 </div>
                 <div className="flex gap-5 justify-between mt-8">
-                  <span className="self-start w-5 h-5 bg-blue-700 rounded-xl" />
+                  <span className="self-start w-5 h-5 bg-red-700 rounded-xl" />
                   <div className="flex-auto">Flexibility and Adaptability</div>
                 </div>
                 <div className="flex gap-5 justify-between mt-8">
-                  <span className="self-start w-5 h-5 bg-blue-700 rounded-xl" />
+                  <span className="self-start w-5 h-5 bg-red-700 rounded-xl" />
                   <div className="flex-auto">Competitive Advantage</div>
                 </div>
               </div>

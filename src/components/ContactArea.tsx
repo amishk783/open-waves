@@ -58,7 +58,7 @@ export function ContactArea() {
           onSubmit={handleSubmit}
           className="flex flex-col grow px-20 py-12 w-full bg-red-50 rounded-xl max-md:px-5 max-md:mt-6 max-md:max-w-full"
         >
-          <header className="mt-14 text-sm font-medium leading-4 text-blue-700 uppercase tracking-[5px] max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
+          <header className="mt-14 text-sm font-medium leading-4 text-[#97203E] uppercase tracking-[5px] max-md:mt-10 max-md:mr-0.5 max-md:max-w-full">
             {" "}
             Contact{" "}
           </header>
@@ -66,12 +66,12 @@ export function ContactArea() {
             {" "}
             Lets get in touch{" "}
           </h1>
-          <p className="pt-1.5 pb-9 mt-9 text-xl leading-7 text-blue-700 border-b border-solid border-b-zinc-900 border-b-opacity-20 max-md:mr-0.5 max-md:max-w-full">
+          <p className="pt-1.5 pb-9 mt-9 text-xl leading-7 text-[#97203E] border-b border-solid border-b-zinc-900 border-b-opacity-20 max-md:mr-0.5 max-md:max-w-full">
             {" "}
             You can reach us anytime via{" "}
             <a
               href="mailto:bluebase@mail.com"
-              className="font-medium text-blue-700"
+              className="font-medium text-[#97203E]"
             >
               bluebase@mail.com
             </a>{" "}
@@ -159,7 +159,7 @@ export function ContactArea() {
             <div className="bg-white rounded-sm border border-solid border-neutral-500 h-[22px] w-[22px]" />
             <div className="flex-auto self-start mt-1.5">You agree to our</div>
             <div className="grow justify-center px-px py-1 my-auto whitespace-nowrap border-b border-solid border-b-zinc-900 border-b-opacity-80">
-              <a href="#" className="font-medium text-blue-700">
+              <a href="#" className="font-medium text-[#97203E]">
                 terms and conditions.
               </a>
             </div>
@@ -182,7 +182,7 @@ export function ContactArea() {
                 <div className="flex-grow text-4xl font-medium">22+ </div>
                 <div className="flex-grow self-start mt-3 text-xl">Years</div>
               </div>
-              <div className="mt-5 text-lg leading-5 text-blue-700 whitespace-nowrap">
+              <div className="mt-5 text-lg leading-5 text-[#97203E] whitespace-nowrap">
                 Field Experience
               </div>
             </div>
@@ -193,7 +193,7 @@ export function ContactArea() {
                   Projects
                 </div>
               </div>
-              <div className="mt-4 mb-1 text-lg leading-5 text-blue-700 whitespace-nowrap">
+              <div className="mt-4 mb-1 text-lg leading-5 text-[#97203E] whitespace-nowrap">
                 Done Around World
               </div>
             </div>
@@ -201,7 +201,7 @@ export function ContactArea() {
               <div className="text-4xl font-medium leading-9 text-neutral-800">
                 99%
               </div>
-              <div className="mt-5 mb-1 text-lg leading-5 text-blue-700">
+              <div className="mt-5 mb-1 text-lg leading-5 text-[#97203E]">
                 Client Satisfaction
               </div>
             </div>
@@ -210,7 +210,7 @@ export function ContactArea() {
                 <div className="flex-grow text-4xl font-medium">1995+ </div>
                 <div className="flex-grow self-start mt-3 text-xl">Year</div>
               </div>
-              <div className="mt-5 mb-1 text-lg leading-5 text-blue-700 whitespace-nowrap">
+              <div className="mt-5 mb-1 text-lg leading-5 text-[#97203E] whitespace-nowrap">
                 Established On
               </div>
             </div>
@@ -218,7 +218,7 @@ export function ContactArea() {
               <div className="text-4xl font-medium">2 </div>
               <div className="flex-auto self-start mt-3 text-xl">Mins</div>
             </div>
-            <div className="mt-5 text-lg leading-5 text-blue-700">
+            <div className="mt-5 text-lg leading-5 text-[#97203E]">
               Response Time
             </div>
           </div>
