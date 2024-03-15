@@ -165,4 +165,11 @@
   .gradient {
     background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
   }
+
+  .bgGradient {
+    background: radial-gradient(63.94% 63.94% at 50% 0%, rgba(250, 128, 128, 0.24) 0%, rgba(233, 5, 5, 0.884) 100%),
+      #ffffff
+  }
+
+
 }
