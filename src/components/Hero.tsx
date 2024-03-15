@@ -2,11 +2,21 @@ import * as React from "react";
 import Image from "next/image";
 import { easeIn, motion } from "framer-motion";
 export function Hero() {
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.8,
+      },
+    },
+  };
+  const item = {
+    hidden: { opacity: 0, x: 600 },
+    show: { opacity: 1, x: 0, duration: 100 },
+  };
   return (
-
     <div className="flex  justify-center items-center px-12 pt-12 w-full max-md:px-5 max-md:max-w-full bg-gradient-to-r from-red-200 via-purple-50 to-blue-200">
-
-
       <div className="-z-10 bg-white">
         <svg viewBox="0 0 500 200">
           <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
@@ -26,7 +36,6 @@ export function Hero() {
                 transition={{ duration: 1, ease: "easeIn" }}
                 className="mt-7 text-8xl tracking-tighter leading-[82px] text-neutral-800 max-md:max-w-full max-md:text-4xl max-md:leading-10"
               >
-
                 Seamless IT for your business, boosting your growth.
               </motion.div>
               <div className="mt-11 text-2xl leading-10 text-neutral-800 max-md:mt-10 max-md:mr-1.5 max-md:max-w-full max-sm:text-lg">
@@ -34,7 +43,6 @@ export function Hero() {
                 forward in the digital landscape.
               </div>
               <div className="flex gap-4 self-start mt-9 text-lg leading-7 max-sm:flex-col ">
-
                 <button className="grow justify-center px-7 py-5 whitespace-nowrap bg-red-700 rounded-[30px] text-stone-50 max-md:px-4 max-md:py-3 hover:scale-110">
                   Learn More
                 </button>
@@ -50,111 +58,95 @@ export function Hero() {
               </div>
             </div>
           </div>{" "}
-
-
-          
           <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-
             <div className="flex flex-col max-md:max-w-full">
-              <div className="flex overflow-hidden relative flex-col items-start pt-12 pr-16 w-full max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]">
-                {/*<Image
-
-                  src="/hero-bg1-1.png"
-                  className="object-cover absolute inset-0 size-full max-sm:hidden"
-                  alt="hero background"
-                  width={450}
-                  height={200}
-                /> */}
-
-                <motion.div
-                  initial={{ transform: "translateX(100px)" }}
-                  animate={{ transform: "translateX(0px)" }}
-                  exit={{ transform: "translateX(-100px)" }}
-                  transition={{ duration: 1, ease: "easeIn" }}
-                  className="flex xl:flex-row gap-6"
-                >
-
-                  <div className="flex relative gap-4 justify-between px-20 py-11 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
-                    <Image
-                      src="/hero-icon1.svg"
-                      alt="hero-icon"
-                      width={50}
-                      height={50}
-                    />
-                    <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
-                      +8
-                    </div>
-                    <div className="self-start mt-2 text-base leading-5 text-zinc-900">
-                      Years
-                      <br />
-                      <span className="text-zinc-900">Experience</span>
-                    </div>
-                  </div>
-                  <div className="flex relative gap-4 justify-between px-20 py-11 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
-                    <Image
-                      src="/hero-icon1.svg"
-                      alt="hero-icon"
-                      width={50}
-                      height={50}
-                    />
-                    <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
-                      +8
-                    </div>
-                    <div className="self-start mt-2 text-base leading-5 text-zinc-900">
-                      Years
-                      <br />
-                      <span className="text-zinc-900">Experience</span>
-                    </div>
-                  </div>
-
-                </motion.div>
-
-              </div>
               <motion.div
-                initial={{ transform: "translateX(-100px)" }}
-                animate={{ transform: "translateX(0px)" }}
-                exit={{ transform: "translateX(-100px)" }}
-                transition={{ duration: 1, ease: "easeIn" }}
-                className="mt-6 max-md:max-w-full max-sm:mt-0"
+                animate="show"
+                variants={container}
+                initial="hidden"
+                className="grid grid-cols-2 relative items-center pt-20 pl-12 w-full max-md:pr-5 max-md:max-w-full max-sm:pt-2 max-sm:min-h-[1px]"
               >
-                <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
-                  <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
-                    <div className="flex relative gap-4 justify-between px-20 py-11 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
+                <motion.div
+                  variants={item}
+                  className="flex relative gap-4 justify-between px-20 py-16 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10"
+                >
+                  <Image
+                    src="/hero-icon1.svg"
+                    alt="hero-icon"
+                    width={50}
+                    height={50}
+                  />
+                  <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
+                    +8
+                  </div>
+                  <div className="self-start mt-2 text-base leading-5 text-zinc-900">
+                    Years
+                    <br />
+                    <span className="text-zinc-900">Experience</span>
+                  </div>
+                </motion.div>
+                <motion.div
+                  variants={item}
+                  className="flex relative gap-4 justify-between px-20 py-16 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10"
+                >
+                  <Image
+                    src="/hero-icon1.svg"
+                    alt="hero-icon"
+                    width={50}
+                    height={50}
+                  />
+                  <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
+                    +8
+                  </div>
+                  <div className="self-start mt-2 text-base leading-5 text-zinc-900">
+                    Years
+                    <br />
+                    <span className="text-zinc-900">Experience</span>
+                  </div>
+                </motion.div>
+                <motion.div
+                  variants={item}
+                  className="flex flex-col max-md:ml-0 max-md:w-full"
+                >
+                  <div className="flex relative gap-4 justify-between px-20 py-16 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
+                    <Image
+                      src="/hero-icon1.svg"
+                      alt="hero-icon"
+                      width={50}
+                      height={50}
+                    />
+                    <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
+                      +8
+                    </div>
+                    <div className="self-start mt-2 text-base leading-5 text-zinc-900">
+                      Years
+                      <br />
+                      <span className="text-zinc-900">Experience</span>
+                    </div>
+                  </div>
+                </motion.div>{" "}
+                <motion.div
+                  variants={item}
+                  className="flex flex-col max-md:ml-0 max-md:w-full"
+                >
+                  <div className="flex relative gap-4 justify-between px-20 py-16 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-2  max-md:px-5 max-md:mt-10">
+                    <div className="flex flex-col flex-1 text-xs font-medium leading-3 text-zinc-700">
+                      <div>Verified by</div>
                       <Image
-                        src="/hero-icon1.svg"
-                        alt="hero-icon"
-                        width={50}
+                        alt="google-icon"
+                        src="/hero-icon2.svg"
+                        className="self-center mt-3 aspect-[3.03] w-[91px]"
+                        width={91}
                         height={50}
                       />
-                      <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
-                        +8
-                      </div>
-                      <div className="self-start mt-2 text-base leading-5 text-zinc-900">
-                        Years
-                        <br />
-                        <span className="text-zinc-900">Experience</span>
-                      </div>
                     </div>
-                  </div>{" "}
-                  <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-                    <div className="flex grow gap-5 justify-between px-14 py-10 w-full bg-white rounded-xl shadow-md max-md:px-5 max-md:mt-6">
-                      <div className="flex flex-col flex-1 text-xs font-medium leading-3 text-zinc-700">
-                        <div>Verified by</div>
-                        <Image
-                          alt="google-icon"
-                          src="/hero-icon2.svg"
-                          className="self-center mt-3 aspect-[3.03] w-[91px]"
-                          width={91}
-                          height={50}
-                        />
-                      </div>
-                      <div className="flex-auto self-end mt-8 text-base leading-4 text-zinc-900">
-                        3245 <span className="text-zinc-900">Reviews</span>
-                      </div>
+                    <div className="flex-auto self-end mt-8 text-base leading-4 text-zinc-900">
+                      3245 <span className="text-zinc-900">Reviews</span>
                     </div>
                   </div>
-                </div>
+                </motion.div>
               </motion.div>
+              {/* </motion.div> */}
             </div>
           </div>
         </div>
