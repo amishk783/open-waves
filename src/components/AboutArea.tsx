@@ -1,7 +1,7 @@
 export function AboutArea() {
   return (
     <section className=" pt-52 pb-28 max-sm:pt-14 ">
-      <div className="max-container">
+      <div className="max-container 2xl:px-24">
         <div className="w-full flex items-center justify-between gap-10">
           <div
             id="left"
@@ -38,7 +38,7 @@ export function AboutArea() {
                     <div className="py-12 pr-5  rounded-xl max-md:pr-5 max-md:max-w-full">
                       <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
                         <div className="w-[14%] max-md:ml-0 max-md:w-full">
-                          <div className="justify-center items-center px-4 mt-5 h-[53px] w-[53px] text-2xl font-bold tracking-tight text-center text-blue-700 whitespace-nowrap bg-violet-50 rounded-3xl aspect-square  leading-[53.02px] max-md:mt-10">
+                          <div className="justify-center items-center px-4 mt-5 h-[53px] w-[53px] text-2xl font-bold tracking-tight text-center text-[#97203E] whitespace-nowrap bg-violet-50 rounded-3xl aspect-square  leading-[53.02px] max-md:mt-10">
                             01
                           </div>
                         </div>
@@ -93,7 +93,7 @@ export function AboutArea() {
                     <div className="py-12 pr-5  rounded-xl max-md:pr-5 max-md:max-w-full">
                       <div className="flex gap-5 max-md:flex-col max-md:gap-0 max-md:">
                         <div className="w-[14%] max-md:ml-0 max-md:w-full">
-                          <div className="justify-center items-center px-4 mt-5 text-2xl font-bold tracking-tight text-center text-blue-700 whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] w-[53px] leading-[53.02px] max-md:mt-10">
+                          <div className="justify-center items-center px-4 mt-5 text-2xl font-bold tracking-tight text-center text-[#97203E] whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] w-[53px] leading-[53.02px] max-md:mt-10">
                             03
                           </div>
                         </div>
