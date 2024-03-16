@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+
 const services: { title: string; description: string; image: string }[] = [
   {
     title: "Development",
@@ -35,7 +36,13 @@ export function Offering() {
   };
   const item = {
     hidden: { opacity: 0, y: 100 },
-    show: { opacity: 1, y: 0, duration: 100 },
+    show: {
+      opacity: 1,
+      y: 0,
+      duration: 100,
+      ease: "easeInOut",
+      type: "spring",
+    },
   };
   return (
     <motion.section className="pt-44 pb-44 max-sm:pt-20 max-sm:pb-20 ">
@@ -61,48 +68,49 @@ export function Offering() {
                 whileInView="show"
                 initial="hidden"
                 variants={container}
-                className=" grid grid-cols-5 gap-5  max-sm:flex-col max-md:mt-10 max-md:max-w-full "
+                className=" grid grid-cols-1 xl:grid-cols-5  gap-5  max-sm:flex-col max-md:mt-10 max-md:max-w-full  "
               >
                 {services.map((service) => (
                   <motion.div
                     variants={item}
                     key={service.title}
-                    className="flex flex-col flex-1 px-9 py-12 bg-white rounded-xl shadow-sm max-md:px-5 max-sm:py-1 "
+                    className="flex flex-col flex-1 py-12 bg-white rounded-xl shadow-sm md:px-5 max-sm:py-1 hover:gradient hover:bg-opacity-50 hover:text-zinc-50  "
                   >
                     <Image
                       src={service.image}
-                      className="mt-7 aspect-[1.02] w-[46px]"
+                      className="mt-7 aspect-[1.02] w-[46px] stroke"
                       alt="Development"
                       width={100}
                       height={50}
                     />
-                    <h2 className="mt-8 text-2xl font-medium leading-6 text-zinc-900">
+                    <h2 className="mt-8 text-2xl font-medium leading-6 ">
                       {service.title}
                     </h2>
-                    <p className="mt-6 text-base leading-6 text-zinc-900 text-opacity-70 w-5/6">
+                    <p className="mt-6 text-base leading-6  text-opacity-70 w-5/6 ">
                       {service.description}
                     </p>
                   </motion.div>
                 ))}
                 <motion.div
                   variants={item}
-                  className="flex flex-col flex-1 pb-11 bg-white rounded-xl shadow-sm "
+                  className="flex flex-row-reverse max-md:px-5 max-sm:py-1 flex-1 items-center max-md:justify-between   xl:flex-col xl:flex-1 xl:pb-11 bg-white rounded-xl shadow-sm hover:gradient hover:bg-opacity-50 hover:text-zinc-50 hover:text-white "
                 >
-                  <div className=" mt-5 text-center justify-center self-end px-5 py-3 mr-6 text-sm font-medium leading-4 text-white whitespace-nowrap bg-red-700 rounded-xl aspect-[2.09] max-md:pr-5 max-md:mr-2.5 max-sm:pt-2">
+                  <div className="mt-5 text-center justify-center self-start xl:self-end px-5 py-3 mr-6 text-sm font-medium leading-4 text-white whitespace-nowrap bg-red-700 rounded-xl aspect-[2.09] max-md:pr-5 max-md:mr-2.5 max-sm:pt-2">
                     Free!
                   </div>
-                  <div className="flex flex-col px-9 pt-2 max-md:px-5 max-sm:pt-0">
+                  <div className="flex flex-col xl:px-9 pt-2  max-sm:pt-4">
                     <Image
                       src="/service-icon-5.svg"
-                      className="mt-7 aspect-[1.02] w-[46px]"
+                      className="xl:mt-7 aspect-[1.02] w-[46px]"
                       alt="Development"
                       width={100}
                       height={50}
                     />
-                    <h2 className="mt-8 text-2xl font-medium leading-6 text-zinc-900">
+
+                    <h2 className="mt-8 text-2xl font-medium leading-6">
                       IT Support
                     </h2>
-                    <p className="mt-6 text-base leading-6 text-zinc-900 text-opacity-70 ">
+                    <p className="mt-6 text-base leading-6 text-opacity-70 ">
                       We offers expert assistance <br /> for your IT issues.
                     </p>
                   </div>

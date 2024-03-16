@@ -162,9 +162,14 @@
   }
 
   .gradient {
-    background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+    background: radial-gradient(63.94% 63.94% at 50% 0%, rgba(255, 255, 255, 0.438) 0%, rgba(255, 255, 255, 0.00) 100%),
+      #281F32;
+
   }
 
+  }
 }
+
+
 
 

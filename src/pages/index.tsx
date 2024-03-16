@@ -4,7 +4,7 @@ import Button from "./Button";
 
 import { Fragment} from "react";
 
-import { Header } from "@/components/header/Header";
+import { Header } from "../components/header/Header";
 import { Hero } from "@/components/Hero";
 import { RoadMap } from "@/components/RoadMap";
 import { Offering } from "@/components/Offering";
