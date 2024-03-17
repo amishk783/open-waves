@@ -1,6 +1,38 @@
+import { useEffect, useRef } from "react";
+import { useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 export function AboutArea() {
+  const svgPathref = useRef<SVGPathElement | null>(null);
+  const { scrollYProgress } = useScroll();
+  const svgPathOffset = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
+  // useEffect(() => {
+  //   const path = svgPathref.current;
+  //   if (path) {
+  //     const length = path.getTotalLength();
+  //     document.documentElement.style.setProperty("--length", `${length}`);
+
+  //     // console.log(length);
+  //     // path.style.strokeDasharray = `${length + length}`;
+  //     // path.style.strokeDashoffset = `${length}`;
+
+  //     // window.addEventListener("scroll", () => {
+  //     //   const scrollPercentage =
+  //     //     (document.documentElement.scrollTop + 100) /
+  //     //     (document.documentElement.scrollHeight - window.innerHeight);
+  //     //   const drawLength = length * scrollPercentage;
+
+  //     //   path!.style.strokeDashoffset = String(length - drawLength);
+  //     //   if (scrollPercentage >= 0.99) {
+  //     //     path.style.strokeDasharray = "none";
+  //     //   } else {
+  //     //     path.style.strokeDasharray = path + " " + path;
+  //     //   }
+  //     // });
+  //   }
+  // }, [scrollYProgress]);
+
   return (
-    <section className=" pt-52 pb-28 max-sm:pt-14 ">
+    <section className="  pt-52 pb-28 max-sm:pt-14 ">
       <div className="max-container 2xl:px-24">
         <div className="w-full flex items-center justify-between gap-10">
           <div
@@ -30,8 +62,58 @@ export function AboutArea() {
               <div className="flex-auto">Easy to Approach us</div>
             </div>
           </div>
-          <div className="grow max-md:mt-10 max-md:max-w-full max-sm:hidden">
-            <div className="gap-5 max-md:gap-0">
+          <div className="grow relative  z-10 max-md:mt-10 max-md:max-w-full max-sm:hidden">
+            <div className="mx-20 mt-14 absolute -z-10 ">
+              <motion.svg width="657" height="683">
+                <defs>
+                  <linearGradient
+                    id="customGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stopColor="#97203E" />
+                    <stop offset="100%" stopColor="#FF3800" />
+                  </linearGradient>
+                </defs>
+                <motion.path
+                  initial={{ pathLength: 0, pathSpacing: 0.4 }}
+                  whileInView={{ pathLength: 1, pathSpacing: 0.4 }}
+                  transition={{
+                    pathLength: {
+                      delay: 0.4,
+                      type: "tween",
+                      duration: 10,
+                      ease: "linear",
+                      // repeat: Infinity,
+                      bounce: 0,
+                    },
+                  }}
+                  className=""
+                  strokeDasharray="3.846, 2.282"
+                  strokeDashoffset="0"
+                  strokeWidth="3.641"
+                  id="svgPath"
+                  stroke="url(#customGradient)"
+                  fill="none"
+                  d="M 350 50 Q 150 200 350 300 Q 650 400 350 600 "
+                  transform=" "
+                ></motion.path>
+                <path
+                  id=""
+                  stroke="#97203E"
+                  strokeDasharray="3.846, 2.282"
+                  strokeDashoffset="0"
+                  strokeWidth="1.641"
+                  fill="none"
+                  d="M 350 50 Q 150 200 350 300 Q 650 400 350 600 "
+                  transform=""
+                ></path>
+              </motion.svg>
+            </div>
+
+            <div className="gap-5 max-md:gap-0 abs z-10  ">
               <div className="flex justify-end w-full">
                 <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full mr-12">
                   <div className="flex flex-col  grow max-md:max-w-full">
@@ -57,7 +139,6 @@ export function AboutArea() {
                     </div>
                   </div>
                 </div>
-
               </div>
               <div className="flex w-full">
                 <div className="flex  w-6/12 max-md:ml-0 max-md:w-full ml-12 ">
@@ -68,7 +149,6 @@ export function AboutArea() {
                           <div className="justify-center items-center px-4 mt-5 w-[53px] text-2xl font-bold tracking-tight text-center text-[#97203E]  whitespace-nowrap bg-violet-50 rounded-3xl aspect-square h-[53px] leading-[53.02px] max-md:mt-10">
                             02
                           </div>
-
                         </div>
                         <div className="flex flex-col  ml-5 w-[72%] max-md:ml-0 max-md:w-full bg-violet-50 py-10 pl-4 pr-5">
                           <div className="flex flex-col max-md:mt-10">
@@ -108,7 +188,6 @@ export function AboutArea() {
                             </div>
                           </div>
                         </div>
-
                       </div>
                     </div>
                   </div>

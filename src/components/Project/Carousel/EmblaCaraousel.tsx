@@ -44,7 +44,7 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
             <div className="backface-hidden flex rounded-lg ">
               {slides.map((index) => {
                 const content = imageByIndex(index);
-                console.log(content);
+
                 return (
                   <div key={index} className="">
                     <div className="flex justify-between w-[650px] flex-grow-0 flex-shrink-0 mr-[-250px] max-sm:mr-[0px] transition-transform duration-300 transform hover:scale-105 max-sm:w-[300px]">
