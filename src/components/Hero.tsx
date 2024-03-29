@@ -34,7 +34,7 @@ export function Hero() {
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeIn" }}
-                className="mt-7 text-8xl tracking-tighter leading-[82px] text-neutral-800 max-md:max-w-full max-md:text-4xl max-md:leading-10"
+                className="mt-7 text-7xl tracking-tighter text-neutral-800 max-md:max-w-full max-md:text-xl max-md:leading-10"
               >
                 Seamless IT for your business, boosting your growth.
               </motion.div>
