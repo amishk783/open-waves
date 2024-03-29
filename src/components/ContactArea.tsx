@@ -70,10 +70,10 @@ export function ContactArea() {
             {" "}
             You can reach us anytime via{" "}
             <a
-              href="mailto:bluebase@mail.com"
+              href="mailto: " //insert mail here
               className="font-medium text-[#97203E]"
             >
-              bluebase@mail.com
+              example@xyz.com
             </a>{" "}
           </p>
           <div className="flex gap-5 justify-between mt-10 max-md:flex-wrap max-md:mr-0.5 max-md:max-w-full">
@@ -288,14 +288,15 @@ export function ContactArea() {
           </div>
           <div className="flex gap-3 mt-6 text-base font-medium leading-4 whitespace-nowrap text-zinc-900 text-opacity-80">
             <Image src="/instagram.png" alt="contact" width={25} height={50} />
+          <button>
             <a
               href="https://linkedin.com"
               className="flex-auto my-auto"
               aria-label="LinkedIn"
-              role="button"
             >
               LinkedIn
             </a>
+            </button>
           </div>
         </div>
       </div>

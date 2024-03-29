@@ -21,7 +21,7 @@ export function Prefooter() {
               className="w-full bg-transparent"
             />
           </div>
-          <button className="grow justify-center px-7 py-4 text-center bg-blue-700 rounded-md leading-[100%] text-stone-50 max-md:px-5">
+          <button className="grow justify-center px-7 py-4 text-center bg-red-500 rounded-md leading-[100%] text-stone-50 max-md:px-5">
             Get Started
           </button>
         </div>
@@ -66,7 +66,7 @@ export function Prefooter() {
           <br /> and providing valuable insights tailored to your business.
         </div>
         <button
-          className="justify-center self-start px-7 py-3.5 mt-10 text-base leading-4 whitespace-nowrap bg-blue-700 rounded-md text-stone-50 max-md:px-5"
+          className="justify-center self-start px-7 py-3.5 mt-10 text-base leading-4 whitespace-nowrap bg-red-500 rounded-md text-stone-50 max-md:px-5"
           aria-label="Get an appointment now"
         >
           Get an appointment now
