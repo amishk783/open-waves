@@ -60,105 +60,106 @@ export function NewsArea() {
             </a>
           </div>
         </div>
-        <div className="pt-6 gap-6 flex items-start max-sm:flex-col">
-          <div className="flex-1 bg-red-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
-            <div className=" overflow-hidden mb-12">
-              <Image
-                className=" rounded-lg block w-full object-cover max-w-full max-sm:w-[250px]"
-                src="/newsarea/news-2.jpg"
-                alt=""
-                width={400}
-                height={300}
-              />
-            </div>
-            <div className=" pr-24 pl-2 max-sm:pr-10">
-              <div className="">
-                <h5 className=" mb-5 text-sm tracking-wider text-blue-500 uppercase">
-                  Web Development
-                </h5>
-                <h1 className=" tracking-[-0.5px] leading-9 mb-6 font-bold text-3xl ">
-                  Bluebase launches Tap to Pay on smartphone for international
-                  and domestic business
-                </h1>
-                <p className=" font-medium text-lg border-b-2 border-slate-300 leading-7 text-slate-400 pb-8 mb-10">
-                  Small UK merchants, businesses, and other enterprises can now
-                  use Tap to Pay on service to replace payment terminals at
-                  point of sale.
-                </p>
-                <ul className=" flex flex-wrap gap-8 list-none">
-                  <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
-                    <BadgeCheck className=" bg-blue-400 text-slate-700 rounded-full" />
-                    Collaboration Tools
-                  </li>
-                  <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
-                    <BadgeCheck className=" bg-blue-400 text-slate-700 rounded-full" />
-                    Smart Reminders
-                  </li>
-                  <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
-                    <BadgeCheck className=" bg-blue-400 text-slate-600 rounded-full" />
-                    Requirement
-                  </li>
-                  <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
-                    <BadgeCheck className=" bg-blue-400 text-slate-600 rounded-full" />
-                    Task Management
-                  </li>
-                </ul>
-              </div>
-              <a>
-                <ChevronUpCircle />
-              </a>
-            </div>
-          </div>
-          <div className="flex-1 bg-red-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
-            <div className=" overflow-hidden mb-12">
-              <Image
-                className=" rounded-lg block w-full object-cover max-w-full max-sm:w-[250px]"
-                src="/newsarea/news-2.jpg"
-                alt=""
-                width={400}
-                height={300}
-              />
-            </div>
-            <div className=" pr-24 pl-2 max-sm:pr-10">
-              <div className="">
-                <h5 className=" mb-5 text-sm tracking-wider text-blue-500 uppercase">
-                  Web Development
-                </h5>
-                <h1 className=" tracking-[-0.5px] leading-9 mb-6 font-bold text-3xl ">
-                  Bluebase launches Tap to Pay on smartphone for international
-                  and domestic business
-                </h1>
-                <p className=" font-medium text-lg border-b-2 border-slate-300 leading-7 text-slate-400 pb-8 mb-10">
-                  Small UK merchants, businesses, and other enterprises can now
-                  use Tap to Pay on service to replace payment terminals at
-                  point of sale.
-                </p>
-                <ul className=" flex flex-wrap gap-8 list-none">
-                  <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
-                    <BadgeCheck className=" bg-blue-400 text-slate-700 rounded-full" />
-                    Collaboration Tools
-                  </li>
-                  <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
-                    <BadgeCheck className=" bg-blue-400 text-slate-700 rounded-full" />
-                    Smart Reminders
-                  </li>
-                  <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
-                    <BadgeCheck className=" bg-blue-400 text-slate-600 rounded-full" />
-                    Requirement
-                  </li>
-                  <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
-                    <BadgeCheck className=" bg-blue-400 text-slate-600 rounded-full" />
-                    Task Management
-                  </li>
-                </ul>
-              </div>
-              <a>
-                <ChevronUpCircle />
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
 }
+
+{/* <div className="pt-6 gap-6 flex items-start max-sm:flex-col">
+  <div className="flex-1 bg-red-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
+    <div className=" overflow-hidden mb-12">
+      <Image
+        className=" rounded-lg block w-full object-cover max-w-full max-sm:w-[250px]"
+        src="/newsarea/news-2.jpg"
+        alt=""
+        width={400}
+        height={300}
+      />
+    </div>
+    <div className=" pr-24 pl-2 max-sm:pr-10">
+      <div className="">
+        <h5 className=" mb-5 text-sm tracking-wider text-blue-500 uppercase">
+          Web Development
+        </h5>
+        <h1 className=" tracking-[-0.5px] leading-9 mb-6 font-bold text-3xl ">
+          Bluebase launches Tap to Pay on smartphone for international
+          and domestic business
+        </h1>
+        <p className=" font-medium text-lg border-b-2 border-slate-300 leading-7 text-slate-400 pb-8 mb-10">
+          Small UK merchants, businesses, and other enterprises can now
+          use Tap to Pay on service to replace payment terminals at
+          point of sale.
+        </p>
+        <ul className=" flex flex-wrap gap-8 list-none">
+          <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
+            <BadgeCheck className=" bg-blue-400 text-slate-700 rounded-full" />
+            Collaboration Tools
+          </li>
+          <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
+            <BadgeCheck className=" bg-blue-400 text-slate-700 rounded-full" />
+            Smart Reminders
+          </li>
+          <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
+            <BadgeCheck className=" bg-blue-400 text-slate-600 rounded-full" />
+            Requirement
+          </li>
+          <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
+            <BadgeCheck className=" bg-blue-400 text-slate-600 rounded-full" />
+            Task Management
+          </li>
+        </ul>
+      </div>
+      <a>
+        <ChevronUpCircle />
+      </a>
+    </div>
+  </div>
+  <div className="flex-1 bg-red-50 rounded-lg  pt-[24px] px-[22px] pb-[113px] relative overflow-hidden max-sm:px-[10px]">
+    <div className=" overflow-hidden mb-12">
+      <Image
+        className=" rounded-lg block w-full object-cover max-w-full max-sm:w-[250px]"
+        src="/newsarea/news-2.jpg"
+        alt=""
+        width={400}
+        height={300}
+      />
+    </div>
+    <div className=" pr-24 pl-2 max-sm:pr-10">
+      <div className="">
+        <h5 className=" mb-5 text-sm tracking-wider text-blue-500 uppercase">
+          Web Development
+        </h5>
+        <h1 className=" tracking-[-0.5px] leading-9 mb-6 font-bold text-3xl ">
+          Bluebase launches Tap to Pay on smartphone for international
+          and domestic business
+        </h1>
+        <p className=" font-medium text-lg border-b-2 border-slate-300 leading-7 text-slate-400 pb-8 mb-10">
+          Small UK merchants, businesses, and other enterprises can now
+          use Tap to Pay on service to replace payment terminals at
+          point of sale.
+        </p>
+        <ul className=" flex flex-wrap gap-8 list-none">
+          <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
+            <BadgeCheck className=" bg-blue-400 text-slate-700 rounded-full" />
+            Collaboration Tools
+          </li>
+          <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
+            <BadgeCheck className=" bg-blue-400 text-slate-700 rounded-full" />
+            Smart Reminders
+          </li>
+          <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
+            <BadgeCheck className=" bg-blue-400 text-slate-600 rounded-full" />
+            Requirement
+          </li>
+          <li className="flex items-center font-normal text-lg leading-4 gap-5 text-slate-700 min-w-[200px]">
+            <BadgeCheck className=" bg-blue-400 text-slate-600 rounded-full" />
+            Task Management
+          </li>
+        </ul>
+      </div>
+      <a>
+        <ChevronUpCircle />
+      </a>
+    </div>
+  </div>
+</div> */}

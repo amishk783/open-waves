@@ -15,6 +15,9 @@ export function Hero() {
     hidden: { opacity: 0, x: 600 },
     show: { opacity: 1, x: 0, duration: 100 },
   };
+
+  
+
   return (
     <div className="flex  justify-center items-center px-12 pt-12 w-full max-md:px-5 max-md:max-w-full bg-gradient-to-r from-red-200 via-purple-50 to-blue-200">
       <div className="-z-10 bg-white">
@@ -87,6 +90,25 @@ export function Hero() {
                 </motion.div>
                 <motion.div
                   variants={item}
+                  className="flex relative gap-4 justify-between px-20 py-[63px] bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10"
+                >
+                  <Image
+                    src="/hero-icon1.svg"
+                    alt="hero-icon"
+                    width={50}
+                    height={50}
+                  />
+                  <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
+                    +8
+                  </div>
+                  <div className="self-start mt-2 text-base leading-5 text-zinc-900">
+                    Years
+                    <br />
+                    <span className="text-zinc-900">Experience</span>
+                  </div>
+                </motion.div>
+                <motion.div
+                  variants={item}
                   className="flex relative gap-4 justify-between px-20 py-16 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10"
                 >
                   <Image
@@ -106,43 +128,21 @@ export function Hero() {
                 </motion.div>
                 <motion.div
                   variants={item}
-                  className="flex flex-col max-md:ml-0 max-md:w-full"
+                  className="flex relative gap-4 justify-between px-20 py-16 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10"
                 >
-                  <div className="flex relative gap-4 justify-between px-20 py-16 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-3  max-md:px-5 max-md:mt-10">
-                    <Image
-                      src="/hero-icon1.svg"
-                      alt="hero-icon"
-                      width={50}
-                      height={50}
-                    />
-                    <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
-                      +8
-                    </div>
-                    <div className="self-start mt-2 text-base leading-5 text-zinc-900">
-                      Years
-                      <br />
-                      <span className="text-zinc-900">Experience</span>
-                    </div>
+                  <Image
+                    src="/hero-icon1.svg"
+                    alt="hero-icon"
+                    width={50}
+                    height={50}
+                  />
+                  <div className="my-auto text-5xl font-medium tracking-wide leading-10 text-neutral-800 max-md:text-4xl">
+                    +8
                   </div>
-                </motion.div>{" "}
-                <motion.div
-                  variants={item}
-                  className="flex flex-col max-md:ml-0 max-md:w-full"
-                >
-                  <div className="flex relative gap-4 justify-between px-20 py-16 bg-white rounded-xl shadow-md shadow-slate-300 mx-2 my-2  max-md:px-5 max-md:mt-10">
-                    <div className="flex flex-col flex-1 text-xs font-medium leading-3 text-zinc-700">
-                      <div>Verified by</div>
-                      <Image
-                        alt="google-icon"
-                        src="/hero-icon2.svg"
-                        className="self-center mt-3 aspect-[3.03] w-[91px]"
-                        width={91}
-                        height={50}
-                      />
-                    </div>
-                    <div className="flex-auto self-end mt-8 text-base leading-4 text-zinc-900">
-                      3245 <span className="text-zinc-900">Reviews</span>
-                    </div>
+                  <div className="self-start mt-2 text-base leading-5 text-zinc-900">
+                    Years
+                    <br />
+                    <span className="text-zinc-900">Experience</span>
                   </div>
                 </motion.div>
               </motion.div>
