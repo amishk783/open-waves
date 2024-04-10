@@ -52,7 +52,7 @@ const components: {
 
 export function Menu0() {
   return (
-    <div className="absolute left-0 w-full h-100vh bg-blue-200 overflow-x-hidden">
+    <div className="absolute left-0 w-full h-100vh bg-white  overflow-x-hidden">
       {/* outline */}
       <div className=" absolute left-0 -top-6 right-0 h-6 bg-red-700"></div>
       <div className="">
@@ -67,8 +67,9 @@ export function Menu0() {
                     key={component.title}
                     className=" text-base font-normal flex gap-6 space-y-2 "
                   >
-                    <div className="border-purple-100 max-w-56 w-full rounded-xl ">
+                    <div className="border-purple-50 max-w-56 w-full  ">
                       <Image
+                        className="rounded-lg border-blue-100 border-2  "
                         src={component.image}
                         alt={component.title}
                         width={220}
@@ -99,7 +100,7 @@ export function Menu0() {
               </ul>
             </div>
           </div>
-          <div className=" bg-white relative py-12 pl-1">
+          <div className="flex justify-center items-center bg-gray-100 relative py-12 w-[30%] ">
             {" "}
             {/* right part  */}
             <div className="flex flex-col items-start">
