@@ -19,7 +19,7 @@ export function Hero() {
   
 
   return (
-    <div className="flex  justify-center items-center px-12 pt-12 w-full max-md:px-5 max-md:max-w-full bg-gradient-to-r from-red-200 via-purple-50 to-blue-200">
+    <div className="flex  justify-center items-center px-12 2xl:px-20 2xl:pt-4 pt-12 w-full max-md:px-5 max-md:max-w-full bg-gradient-to-r from-red-200 via-purple-50 to-blue-200">
       <div className="-z-10 bg-white">
         <svg viewBox="0 0 500 200">
           <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>

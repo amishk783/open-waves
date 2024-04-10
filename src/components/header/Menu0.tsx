@@ -56,7 +56,7 @@ export function Menu0() {
       {/* outline */}
       <div className=" absolute left-0 -top-6 right-0 h-6 bg-red-700"></div>
       <div className="">
-        <div className="max-container flex ">
+        <div className="max-container 2xl:px-24 flex ">
           <div className="flex-1 pt-10 pr-[95px]">
             <div className=" py-7 w-full items-center justify-between flex-col space-y-4">
               <div className="w-full grid grid-cols-2 gap-5 space-y-2 border-b-2  items-start pb-16 justify-between">
