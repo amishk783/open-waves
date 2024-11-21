@@ -2,24 +2,23 @@ import Image from "next/image";
 
 import Button from "./Button";
 
-import { Fragment} from "react";
+import { Fragment } from "react";
 
-import { Header } from "../components/header/Header";
-import { Hero } from "@/components/Hero";
-import { RoadMap } from "@/components/RoadMap";
-import { Offering } from "@/components/Offering";
-import { Studio } from "@/components/studio/Studio";
-import { AboutArea } from "@/components/AboutArea";
-import { Projects } from "@/components/Project/Projects";
+import { Header } from "../_components/header/Header";
+import { Hero } from "@/sections/Hero";
+import { RoadMap } from "@/sections/RoadMap";
+import { Offering } from "@/sections/Offering";
+import { Studio } from "@/sections/studio/Studio";
+import { AboutArea } from "@/sections/AboutArea";
+import { Projects } from "@/sections/Project/Projects";
 
-import { NewsArea } from "@/components/newarea/NewArea";
-import { ContactArea } from "@/components/ContactArea";
-import { Footer } from "@/components/footer/Footer";
+import { NewsArea } from "@/sections/newarea/NewArea";
+import { ContactArea } from "@/sections/ContactArea";
+import { Footer } from "@/_components/footer/Footer";
 
 export default function Home() {
   return (
     <Fragment>
-      <Header />
       <div className="flex justify-center">{/* <NavigationMenuDemo /> */}</div>
       <main className=" overflow-hidden">
         <Hero />
@@ -30,7 +29,6 @@ export default function Home() {
         <Projects />
         <NewsArea />
         <ContactArea />
-        <Footer />
       </main>
     </Fragment>
   );

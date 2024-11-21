@@ -1,0 +1,206 @@
+import * as React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import { cn } from "@/lib/utils";
+
+const roadmaps: {
+  image: string;
+  title: string;
+  subtitle: string;
+  line: string;
+}[] = [
+  {
+    image: "/hwd-icon-1.svg",
+    title: "Brainstorming",
+    subtitle: "Ideas",
+    line: "/linenew.png",
+  },
+  {
+    image: "/hwd-icon-2.svg",
+    title: "Product",
+    subtitle: "Desgin",
+    line: "/linenew.png",
+  },
+  {
+    image: "/hwd-icon-3.svg",
+    title: "Front-End",
+    subtitle: "Development",
+    line: "/linenew2.png",
+  },
+];
+
+export function RoadMap() {
+  return (
+    <section className="pt-24">
+      <div className="w-full xl:max-container px-4 max-sm:px-3">
+        <div className=" flex w-full overflow bg-[#281F32] justify-center relative rounded-md p-10 lg:p-12 z-1 max-sm:flex-col max-sm:p-10">
+          <motion.div
+            initial={{ y: -1000 }}
+            animate={{ y: 0 }}
+            transition={{
+              duration: 1,
+              type: "spring",
+              stiffness: 100,
+              damping: 20,
+            }}
+          >
+            <Image
+              className=" absolute left-0 bottom-0 "
+              src="/roadmap-bg-shape-1.svg"
+              alt="shape"
+              width={1510}
+              height={630}
+            />
+          </motion.div>
+          <div className="flex flex-col xl:flex-row w-full">
+            <div className="flex flex-col items-start justify-between w-[17%] max-md:ml-0 max-md:w-full">
+              <div className=" text-white max-md:mt-10 max-sm:mt-2">
+                <div className="text-medium font-bold leading-4 text-red-500 uppercase tracking-[5px]">
+                  Our Model
+                </div>
+                <motion.div
+                  initial={{ x: -1000 }}
+                  animate={{ x: 0 }}
+                  transition={{
+                    duration: 1,
+                    type: "spring",
+                    stiffness: 100,
+                    damping: 20,
+                  }}
+                  className="mt-7 text-4xl font-bold tracking-tighter whitespace-nowrap max-md:text-4xl"
+                >
+                  How we do
+                </motion.div>
+                <p className="mt-8 text-base text-wrap whitespace-nowrap">
+                  Save time and money with <br /> our powerful method.
+                </p>
+                <div className="flex gap-3 justify-center mr-28 px-4 py-3 mt-10 xl:mt-60 text-lg leading-7 bg-red-700 rounded-[30px] text-stone-50 max-md:px-6 max-sm:py-4 max-md:mt-10 max-sm:whitespace-nowrap">
+                  <div className="flex-auto text-center w-24">Learn More</div>
+                </div>
+              </div>
+            </div>
+            <div className=" flex-1   xl:ml-5 w-full py-5 max-md:ml-0 max-md:w-full max-xl:mt-10">
+              <div className=" gap-10 lg:gap-24 items-center xl:justify-center flex max-sm:flex-col max-sm:gap-10">
+                {roadmaps.map((roadmap, index) => (
+                  <div
+                    key={roadmap.title}
+                    className="flex items-center bg-white  py-2 px-2 xl:py-4 xl:pl-[15px] xl:pr-8 rounded-xl gap-4 xl:gap-7 relative min-w-44 md:min-w-44 xl:min-w-64 max-sm:p-2 max-sm:min-w-[191px] max-sm:gap-3"
+                  >
+                    <div className=" absolute bg-no-repeat hidden sm:block xl:h-[6px] z-[1] w-44 -right-14  lg:w-64 bg-cover lg:right-[-100px] top-1/2 bg-line max-sm:w-40 max-sm:right-[-50px] ">
+                      <Image
+                        className=""
+                        src={roadmap.line}
+                        alt=""
+                        width={6000}
+                        height={50}
+                      />
+                    </div>
+                    <div
+                      className={cn(
+                        " absolute sm:hidden bg-no-repeat h-[6px] z-[1] w-64 bg-cover top-1/2 bg-line max-sm:w-40 max-sm:right-[-50px] ",
+                        index % 2 !== 0
+                          ? "rotate-180 mt-28 -left-14"
+                          : "right-[-100px] "
+                      )}
+                    >
+                      <Image
+                        src="/linenew2.png"
+                        alt=""
+                        width={6000}
+                        height={50}
+                      />
+                    </div>
+
+                    <div className="flex flex-none rounded-lg w-16 h-16 z-10 rounder-md items-center justify-center bg-purple-100 px-2">
+                      <Image
+                        src={roadmap.image}
+                        alt="icon-road"
+                        width={70}
+                        height={70}
+                      />
+                    </div>
+                    <div className=" flex-1  text-base font-medium ">
+                      <h4 className="text-[#D8466A] lg:text-base text-sm">
+                        {roadmap.title}
+                      </h4>
+                      <p className=" text-slate-500 max-lg:text-sm">
+                        {roadmap.subtitle}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className=" mt-10 lg:mt-20 py-5 pl-20 lg:pl-12 gap-[100px] items-center lg:justify-center flex max-sm:flex-col max-sm:gap-10 max-sm:pl-0 max-sm:mt-5">
+                <div className="flex items-center bg-white  py-2 px-2 xl:py-4 xl:pl-[15px] xl:pr-8 rounded-xl gap-4 xl:gap-7 relative min-w-44 lg:min-w-64  max-sm:p-2 max-sm:min-w-[191px] max-sm:gap-3">
+                  <div className="absolute bg-no-repeat h-[6px] z-10 w-44 lg:w-64 bg-cover right-[100px] rotate-180  top-[180px] lg:top-[240px] bg-line max-sm:w-40 max-sm:right-[80px] max-sm:top-[150px] ">
+                    <Image
+                      src="/linenew2.png"
+                      alt=""
+                      width={6000}
+                      height={50}
+                    />
+                  </div>
+
+                  <div className="flex flex-none rounded-lg w-16 h-16 rounder-md items-center justify-center z-10 bg-purple-100 px-2">
+                    <Image
+                      src="/hwd-icon-4.svg"
+                      alt="icon-road"
+                      width={70}
+                      height={70}
+                    />
+                  </div>
+                  <div className=" flex-1  text-base font-medium ">
+                    <h4 className="text-[#D8466A] text-base">SEO </h4>
+                    <p className=" text-slate-500">Optimization</p>
+                  </div>
+                </div>
+                <div className="flex items-center bg-white  py-2 px-2 xl:py-4 xl:pl-[15px] xl:pr-8 rounded-xl gap-4 xl:gap-7 relative min-w-44 lg:min-w-64 max-sm:p-2 max-sm:min-w-[191px] max-sm:gap-3">
+                  <div className=" absolute bg-no-repeat h-[6px] z-[1] w-64 bg-cover right-[100px] top-1/2 bg-line max-sm:hidden ">
+                    <Image src="/linenew.png" alt="" width={6000} height={50} />
+                  </div>
+                  <div className=" absolute sm:hidden bg-no-repeat h-[6px] z-[1] w-64 bg-cover right-[-100px] top-1/2 bg-line max-sm:w-40 max-sm:right-[-50px] ">
+                    <Image
+                      src="/linenew2.png"
+                      alt=""
+                      width={6000}
+                      height={50}
+                    />
+                  </div>
+                  <div className="flex flex-none rounded-lg w-16 h-16 rounder-md items-center justify-center z-10 bg-purple-100 px-2">
+                    <Image
+                      src="/hwd-icon-4.svg"
+                      alt="icon-road"
+                      width={70}
+                      height={70}
+                    />
+                  </div>
+                  <div className=" flex-1  text-base font-medium ">
+                    <h4 className="text-[#D8466A] text-base">Back-End</h4>
+                    <p className=" text-slate-500">Development</p>
+                  </div>
+                </div>
+              </div>
+              <div className=" mt-10 lg:mt-20  max-md:mr-0 max-lg:mr-32   items-center md:ml-36 lg:-m-10 justify-center md:justify-start  lg:justify-center flex max-sm:mt-5">
+                <div className="flex items-center bg-white  py-2 px-2 xl:py-4 xl:pl-[15px] xl:pr-8 rounded-xl gap-4 xl:gap-7 relative min-w-44 lg:min-w-64  max-sm:p-2 max-sm:min-w-[191px] max-sm:gap-3">
+                  <div className=" absolute bg-no-repeat h-[6px] z-[1] w-64 bg-cover right-[-100px] top-1/2 bg-line "></div>
+                  <div className="flex flex-none rounded-lg w-16 h-16 rounder-md items-center justify-center bg-purple-100 px-2">
+                    <Image
+                      src="/hwd-icon-6.svg"
+                      alt="icon-road"
+                      width={70}
+                      height={70}
+                    />
+                  </div>
+                  <div className=" flex-1  text-base font-medium ">
+                    <h4 className="text-[#D8466A] text-base">Digital</h4>
+                    <p className=" text-slate-500">Marketing</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -58,6 +58,9 @@ const config = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      backgroundColor: {
+        card: "#191919",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -73,7 +76,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       backgroundImage: {
-        // "bg-line": "url('/linenew.png')",
+        "gradient-custom":
+          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(205,89,89,1) 53%, rgba(255,239,0,1) 100%)",
       },
     },
   },
